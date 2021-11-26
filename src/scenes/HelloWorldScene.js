@@ -1,39 +1,50 @@
 import Phaser from 'phaser'
+import images from '../assets/images/*.png';
 
-export default class HelloWorldScene extends Phaser.Scene
-{
-	constructor()
-	{
-		super('hello-world')
-	}
-
-	preload()
-    {
-        this.load.setBaseURL('http://labs.phaser.io')
-
-        this.load.image('sky', 'assets/skies/space3.png')
-        this.load.image('logo', 'assets/sprites/phaser3-logo.png')
-        this.load.image('red', 'assets/particles/red.png')
+export default class HelloWorldScene extends Phaser.Scene {
+    constructor() {
+        super('hello-world')
     }
 
-    create()
-    {
-        this.add.image(400, 300, 'sky')
+    preload() {
+        this.load.image('background', images.background)
+        this.load.image('player', images.player)
+        this.load.image('dumpster', images.dumpster)
+        this.load.image('lava', images.lava)
+        this.load.image('ground', images.ground)
+    }
 
-        const particles = this.add.particles('red')
+    create() {
+        this.gameSpeed = 10;
+        const { height, width } = this.game.config
 
-        const emitter = particles.createEmitter({
-            speed: 100,
-            scale: { start: 1, end: 0 },
-            blendMode: 'ADD'
-        })
+        //images
+        this.add.image(0, 0, 'background').setOrigin(0, 0).setDepth(-1)
 
-        const logo = this.physics.add.image(400, 100, 'logo')
+        this.player = this.physics.add.image(400, 400, 'player').setDepth(1)
+        this.dumpster = this.physics.add.image(1000, 789, 'dumpster').setDepth(1)
+        this.ground = this.add.tileSprite(0, height, width, 30, 'ground').setOrigin(0, 1).setDepth(0)
 
-        logo.setVelocity(100, 200)
-        logo.setBounce(1, 1)
-        logo.setCollideWorldBounds(true)
+        this.player.setCollideWorldBounds(true)
+        this.dumpster.setCollideWorldBounds(true)
 
-        emitter.startFollow(logo)
+        this.health = 4;
+        this.cursorKeys = this.input.keyboard.createCursorKeys()
+    }
+
+    update() {
+        this.jump();
+        this.ground.tilePositionX += this.gameSpeed
+    }
+
+    jump() {
+        if (this.cursorKeys.space.isDown) {
+            if (!this.player.body.onFloor()) {
+                return
+            } else {
+                this.player.setVelocityY(-500)
+            }
+
+        }
     }
 }
