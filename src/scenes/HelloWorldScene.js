@@ -26,10 +26,6 @@ export default class HelloWorldScene extends Phaser.Scene {
 
         this.lives = this.add.group();
 
-        for (this.i = 1; this.i <= this.health; this.i++) {
-            this.lives.create(60 * this.i, 60, 'heart')
-        }
-
         this.player = this.physics.add.image(400, 400, 'player').setDepth(1)
         this.dumpster = this.physics.add.image(1000, 789, 'dumpster').setDepth(1)
 
@@ -40,21 +36,26 @@ export default class HelloWorldScene extends Phaser.Scene {
 
         this.cursorKeys = this.input.keyboard.createCursorKeys()
 
-        this.physics.add.collider(this.player, this.dumpster);
-        this.physics.add.overlap(this.player, this.dumpster, this.logValue, null, this);
+        this.physics.add.collider(this.player, this.dumpster, this.renderLives, null, this);
+
+        this.renderHealth();
     }
 
     update() {
         this.jump();
+        this.move();
         this.ground.tilePositionX += this.gameSpeed
     }
 
-    logValue() {
-        console.log('log')
+    renderHealth() {
+        for (this.i = 1; this.i <= this.health; this.i++) {
+            this.lives.create(60 * this.i, 60, 'heart')
+        }
     }
 
-    renderHealth() {
-
+    renderLives() {
+        this.live = this.lives.getFirstAlive();
+        this.live.destroy();
     }
 
     jump() {
@@ -65,6 +66,16 @@ export default class HelloWorldScene extends Phaser.Scene {
                 this.player.setVelocityY(-600)
             }
 
+        }
+    }
+
+    move() {
+        if (this.cursorKeys.left.isDown) {
+            this.player.setVelocityX(-200)
+        } else if (this.cursorKeys.right.isDown) {
+            this.player.setVelocityX(200)
+        } else {
+            this.player.setVelocityX(0)
         }
     }
 }
