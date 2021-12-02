@@ -4,6 +4,10 @@ import Game from "./scenes/Game";
 import Preloader from "./scenes/Preloader";
 
 const config = {
+  fps: {
+    target: 60,
+    forceSetTimeOut: true,
+  },
   type: Phaser.AUTO,
   width: 1400,
   height: 790,

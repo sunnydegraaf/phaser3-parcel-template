@@ -18,9 +18,9 @@ export default class Game extends Phaser.Scene {
     this.playerTouchingGround = false;
     this.health = 4;
     this.lives = this.add.group();
-
+    this.playerIsInvincible = false;
     this.cursorKeys = this.input.keyboard.createCursorKeys();
-
+    this.frameTime = 0;
     this.add.image(0, 0, "background").setOrigin(0, 0).setDepth(-1);
     this.slope = this.matter.add
       .image(width * 0.4, height + 50, "slope2", null, {
@@ -68,20 +68,30 @@ export default class Game extends Phaser.Scene {
 
         // collider player - dumpster
         if (
-          (bodyA.label == "player" && bodyB.label == "dumpster") ||
-          (bodyB.label == "player" && bodyA.label == "dumpster")
+          (bodyA.label == "player" &&
+            bodyB.label == "dumpster" &&
+            this.playerIsInvincible == false) ||
+          (bodyB.label == "player" &&
+            bodyA.label == "dumpster" &&
+            this.playerIsInvincible == false)
         ) {
           this.live = this.lives.getFirstAlive();
           this.live.destroy();
           this.player.setPosition(400, 400);
+          this.invincible();
         }
 
         if (
-          (bodyA.label == "player" && bodyB.label == "lava") ||
-          (bodyB.label == "player" && bodyA.label == "lava")
+          (bodyA.label == "player" &&
+            bodyB.label == "lava" &&
+            this.playerIsInvincible == false) ||
+          (bodyB.label == "player" &&
+            bodyA.label == "lava" &&
+            this.playerIsInvincible == false)
         ) {
           this.live = this.lives.getFirstAlive();
           this.live.destroy();
+          this.invincible();
           this.player.setPosition(400, 400);
         }
       },
@@ -257,6 +267,38 @@ export default class Game extends Phaser.Scene {
       this.playerTouchingGround = false;
       this.player.setVelocityY(-13);
     }
+  }
+
+  invincible() {
+    this.playerIsInvincible = true;
+    this.add.tween({
+      targets: this.player,
+      ease: "Sine.easeInOut",
+      duration: 300,
+      delay: 0,
+      yoyo: true,
+      repeat: 3,
+      alpha: {
+        getStart: () => 1,
+        getEnd: () => 0.3,
+      },
+      onComplete: () => {
+        this.playerIsInvincible = false;
+      },
+    });
+
+    this.add.tween({
+      targets: this.snow,
+      ease: "Sine.easeInOut",
+      duration: 300,
+      delay: 0,
+      yoyo: true,
+      repeat: 3,
+      alpha: {
+        getStart: () => 1,
+        getEnd: () => 0.3,
+      },
+    });
   }
 
   move() {
