@@ -3,7 +3,7 @@ import Phaser from "phaser";
 
 let gameOptions = {
   platformStartSpeed: 350,
-  spawnRange: [400, 900],
+  spawnRange: [300, 1100],
 };
 
 export default class Game extends Phaser.Scene {
@@ -75,6 +75,17 @@ export default class Game extends Phaser.Scene {
             bodyA.label == "dumpster" &&
             this.playerIsInvincible == false)
         ) {
+          this.player.body.collisionFilter = {
+            group: 1,
+            category: 2,
+            mask: 0,
+          };
+
+          this.slope.body.collisionFilter = {
+            group: 1,
+            category: 2,
+            mask: 0,
+          };
           this.live = this.lives.getFirstAlive();
           this.live.destroy();
           this.player.setPosition(400, 400);
@@ -89,6 +100,12 @@ export default class Game extends Phaser.Scene {
             bodyA.label == "lava" &&
             this.playerIsInvincible == false)
         ) {
+          this.player.body.collisionFilter.group = 1;
+          this.slope.body.collisionFilter = {
+            group: 1,
+            category: 2,
+            mask: 0,
+          };
           this.live = this.lives.getFirstAlive();
           this.live.destroy();
           this.invincible();
@@ -100,6 +117,7 @@ export default class Game extends Phaser.Scene {
   }
 
   update(delta) {
+    console.log(this.player.body.collisionFilter);
     if (this.player) {
       this.player.setAngularVelocity(0);
       this.jump();
@@ -113,12 +131,12 @@ export default class Game extends Phaser.Scene {
 
     let minDistance = this.game.config.width;
     this.platformGroup.getChildren().forEach(function (platform) {
-      platform.x += -3 * (delta / 15000);
-      platform.y -= (3 * (delta / 15000)) / 4.695;
+      platform.x += -6 * (delta / 40000) - 2;
+      platform.y -= (6 * (delta / 40000) + 2) / 4.695;
       let platformDistance =
         this.game.config.width - platform.x - platform.displayWidth / 2;
       minDistance = Math.min(minDistance, platformDistance);
-      if (platform.x < 0) {
+      if (platform.x < -200) {
         this.platformGroup.killAndHide(platform);
         this.platformGroup.remove(platform);
       }
@@ -283,6 +301,18 @@ export default class Game extends Phaser.Scene {
         getEnd: () => 0.3,
       },
       onComplete: () => {
+        this.player.body.collisionFilter = {
+          group: 0,
+          category: 1,
+          mask: 255,
+        };
+
+        this.slope.body.collisionFilter = {
+          group: 0,
+          category: 1,
+          mask: 255,
+        };
+
         this.playerIsInvincible = false;
       },
     });
