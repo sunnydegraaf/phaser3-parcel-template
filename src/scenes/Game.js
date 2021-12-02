@@ -18,6 +18,7 @@ export default class Game extends Phaser.Scene {
     this.playerTouchingGround = false;
     this.health = 4;
     this.lives = this.add.group();
+
     this.cursorKeys = this.input.keyboard.createCursorKeys();
 
     this.add.image(0, 0, "background").setOrigin(0, 0).setDepth(-1);
@@ -50,14 +51,19 @@ export default class Game extends Phaser.Scene {
     this.addPlatform(this.game.config.width + 200);
 
     this.matter.world.on(
-      "collisionactive",
+      "collisionstart",
       function (event, bodyA, bodyB) {
         //collider player - slope
         if (
-          (bodyA.label == "player" && bodyB.label == "slope") ||
-          (bodyB.label == "player" && bodyA.label == "slope")
+          (bodyA.label == "player" &&
+            bodyB.label == "slope" &&
+            this.playerTouchingGround == false) ||
+          (bodyB.label == "player" &&
+            bodyA.label == "slope" &&
+            this.playerTouchingGround == false)
         ) {
           this.playerTouchingGround = true;
+          this.snow.play("snow-landing");
         }
 
         // collider player - dumpster
@@ -69,21 +75,36 @@ export default class Game extends Phaser.Scene {
           this.live.destroy();
           this.player.setPosition(400, 400);
         }
+
+        if (
+          (bodyA.label == "player" && bodyB.label == "lava") ||
+          (bodyB.label == "player" && bodyA.label == "lava")
+        ) {
+          this.live = this.lives.getFirstAlive();
+          this.live.destroy();
+          this.player.setPosition(400, 400);
+        }
       },
       this
     );
   }
 
-  update() {
+  update(delta) {
     if (this.player) {
+      this.player.setAngularVelocity(0);
       this.jump();
       this.move();
+
+      this.snow.setPosition(
+        this.player.body.position.x - 95,
+        this.player.body.position.y + 48
+      );
     }
 
     let minDistance = this.game.config.width;
     this.platformGroup.getChildren().forEach(function (platform) {
-      platform.x += -2;
-      platform.y -= 2 / 4.695;
+      platform.x += -3 * (delta / 15000);
+      platform.y -= (3 * (delta / 15000)) / 4.695;
       let platformDistance =
         this.game.config.width - platform.x - platform.displayWidth / 2;
       minDistance = Math.min(minDistance, platformDistance);
@@ -103,7 +124,6 @@ export default class Game extends Phaser.Scene {
     let platform;
     const typeOfPlatform =
       Phaser.Math.Between(0, 1) === 0 ? "lava" : "dumpster";
-    console.log(typeOfPlatform);
 
     if (this.platformPool.getLength()) {
       platform = this.platformPool.getFirst();
@@ -142,11 +162,87 @@ export default class Game extends Phaser.Scene {
   }
 
   renderPlayer() {
+    const shapes = this.cache.json.get("shapes");
+
     this.player = this.matter.add
-      .image(400, 0, "player", null, {
-        label: "player",
+      .sprite(400, -200, "player", null, {
+        shape: shapes["SLEE_Basis_00000"],
       })
       .setScale(0.7, 0.7);
+
+    this.player.body.position.y += 2;
+
+    this.snow = this.add.sprite(0, 0, "snow").setScale(0.7, 0.7);
+
+    this.anims.create({
+      key: "sled",
+      frameRate: 30,
+      repeat: -1,
+      frames: this.anims.generateFrameNumbers("player", {
+        start: 0,
+        end: 29,
+      }),
+    });
+
+    this.anims.create({
+      key: "sled-jump",
+      frameRate: 30,
+      frames: this.anims.generateFrameNumbers("player", {
+        start: 30,
+        end: 81,
+      }),
+    });
+
+    this.anims.create({
+      key: "snow-idle",
+      frameRate: 30,
+      repeat: -1,
+      frames: this.anims.generateFrameNumbers("snow", {
+        start: 0,
+        end: 53,
+      }),
+    });
+
+    this.anims.create({
+      key: "snow-landing",
+      frameRate: 30,
+      frames: this.anims.generateFrameNumbers("snow", {
+        start: 54,
+        end: 73,
+      }),
+    });
+
+    this.anims.create({
+      key: "snow-jump",
+      frameRate: 60,
+      frames: this.anims.generateFrameNumbers("snow", {
+        start: 74,
+        end: 106,
+      }),
+    });
+
+    this.player.play("sled-jump");
+    this.snow.play("snow-jump");
+
+    this.player.on(
+      "animationcomplete",
+      function (animation, frame) {
+        if (animation.key === "sled-jump") {
+          this.player.play("sled");
+        }
+      },
+      this
+    );
+
+    this.snow.on(
+      "animationcomplete",
+      function (animation, frame) {
+        if (animation.key === "snow-landing") {
+          this.snow.play("snow-idle");
+        }
+      },
+      this
+    );
   }
 
   jump() {
@@ -155,18 +251,21 @@ export default class Game extends Phaser.Scene {
       this.player &&
       this.playerTouchingGround
     ) {
+      this.player.play("sled-jump");
+      this.snow.play("snow-jump");
+
       this.playerTouchingGround = false;
-      this.player.setVelocityY(-11);
+      this.player.setVelocityY(-13);
     }
   }
 
   move() {
     if (this.cursorKeys.left.isDown && this.player) {
-      this.player.setVelocityX(-2.3);
+      this.player.setVelocityX(-4);
     } else if (this.cursorKeys.right.isDown) {
-      this.player.setVelocityX(2.3);
+      this.player.setVelocityX(4);
     } else {
-      this.player.setVelocityX(-0.03);
+      this.player.setVelocityX(-0.07);
     }
   }
 }

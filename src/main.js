@@ -1,6 +1,5 @@
 import Phaser from "phaser";
 
-import HelloWorldScene from "./scenes/HelloWorldScene";
 import Game from "./scenes/Game";
 import Preloader from "./scenes/Preloader";
 
@@ -11,14 +10,14 @@ const config = {
   physics: {
     default: "matter",
     matter: {
-      debug: true,
+      debug: false,
       setBounds: {
         left: true,
         right: true,
         top: false,
         bottom: true,
       },
-      gravity: { y: 0.4 },
+      gravity: { y: 1 },
     },
   },
   scale: {

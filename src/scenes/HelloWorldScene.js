@@ -74,7 +74,7 @@ export default class HelloWorldScene extends Phaser.Scene {
       if (!this.player.body.onFloor()) {
         return;
       } else {
-        this.player.setVelocityY(-600);
+        this.player.setVelocityY(-1300);
       }
     }
   }

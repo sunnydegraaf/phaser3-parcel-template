@@ -1,0 +1,1994 @@
+{
+  "textures": [
+    {
+      "image": "SNEEUW-basis.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 830,
+        "h": 1520
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "SNEEUW_BASIS_00000.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00001.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00002.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00003.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00004.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 664,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00005.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 80,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00006.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 80,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00007.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 80,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00008.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 80,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00009.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 664,
+            "y": 80,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00010.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 160,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00011.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 160,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00012.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 160,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00013.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 160,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00014.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 664,
+            "y": 160,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00015.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 240,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00016.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 240,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00017.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 240,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00018.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 240,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00019.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 664,
+            "y": 240,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00020.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 320,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00021.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 320,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00022.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 320,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00023.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 320,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00024.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 664,
+            "y": 320,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00025.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 400,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00026.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 400,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00027.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 400,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00028.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 400,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00029.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 664,
+            "y": 400,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00030.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 480,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00031.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 480,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00032.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 480,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00033.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 480,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00034.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 664,
+            "y": 480,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00035.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 560,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00036.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 560,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00037.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 560,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00038.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 560,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00039.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 664,
+            "y": 560,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00040.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 640,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00041.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 640,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00042.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 640,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00043.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 640,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00044.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 664,
+            "y": 640,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00045.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 720,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00046.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 720,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00047.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 720,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00048.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 720,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00049.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 664,
+            "y": 720,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00050.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 800,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00051.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 800,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00052.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 800,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_BASIS_00053.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 800,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00000.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 664,
+            "y": 800,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00001.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 880,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00002.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 880,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00003.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 880,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00004.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 880,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00005.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 664,
+            "y": 880,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00006.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 960,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00007.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 960,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00008.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 960,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00009.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 960,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00010.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 664,
+            "y": 960,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00011.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 1040,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00012.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 1040,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00013.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 1040,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00014.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 1040,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00015.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 664,
+            "y": 1040,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00016.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 1120,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00017.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 1120,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00018.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 1120,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00019.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 1120,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_LANDING_00020.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 664,
+            "y": 1120,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00010.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 1200,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00011.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 1200,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00012.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 1200,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00013.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 1200,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00014.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 664,
+            "y": 1200,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00015.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 1280,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00016.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 1280,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00017.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 1280,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00018.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 1280,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00019.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 664,
+            "y": 1280,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00020.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 1360,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00021.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 1360,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00022.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 1360,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00023.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 1360,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00024.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 664,
+            "y": 1360,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00025.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 0,
+            "y": 1440,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00026.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 166,
+            "y": 1440,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00027.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 332,
+            "y": 1440,
+            "w": 166,
+            "h": 80
+          }
+        },
+        {
+          "filename": "SNEEUW_SPRONG_00028.png",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 80
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 80
+          },
+          "frame": {
+            "x": 498,
+            "y": 1440,
+            "w": 166,
+            "h": 80
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "app": "https://www.codeandweb.com/texturepacker",
+    "version": "3.0",
+    "smartupdate": "$TexturePacker:SmartUpdate:82383756a3c410a25d9f6cbadaecff25:a8c18f3b72a0bbd7e9f8ad920a2070ef:a0c7f8dbd9c5c1a781420a781ec5d999$"
+  }
+}
