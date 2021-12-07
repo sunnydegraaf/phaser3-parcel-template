@@ -13,10 +13,12 @@ export default class Game extends Phaser.Scene {
 
   create() {
     //init
-    this.gameSpeed = 10;
+    this.score = 0;
+    this.scoreText = this.add.text(1340, 60, 'score: 0', { fontSize: '32px', fill: '#000' }).setOrigin(1, 1);
+    this.gameSpeed = 20;
     const { height, width } = this.game.config;
     this.playerTouchingGround = false;
-    this.health = 4;
+    this.health = 2;
     this.lives = this.add.group();
     this.playerIsInvincible = false;
     this.cursorKeys = this.input.keyboard.createCursorKeys();
@@ -32,6 +34,13 @@ export default class Game extends Phaser.Scene {
     //renders
     this.renderHealth();
     this.renderPlayer();
+
+    this.time.addEvent({
+      callback: this.increaseScore,
+      callbackScope: this,
+      delay: 1000, // 1000 = 1 second
+      loop: true
+    })
 
     this.platformGroup = this.add.group({
       // once a platform is removed, it's added to the pool
@@ -86,9 +95,8 @@ export default class Game extends Phaser.Scene {
             category: 2,
             mask: 0,
           };
-          this.live = this.lives.getFirstAlive();
-          this.live.destroy();
           this.player.setPosition(400, 400);
+          this.handleHealth();
           this.invincible();
         }
 
@@ -106,8 +114,7 @@ export default class Game extends Phaser.Scene {
             category: 2,
             mask: 0,
           };
-          this.live = this.lives.getFirstAlive();
-          this.live.destroy();
+          this.handleHealth()
           this.invincible();
           this.player.setPosition(400, 400);
         }
@@ -117,7 +124,7 @@ export default class Game extends Phaser.Scene {
   }
 
   update(delta) {
-    console.log(this.player.body.collisionFilter);
+    // console.log(this.player.body.collisionFilter);
     if (this.player) {
       this.player.setAngularVelocity(0);
       this.jump();
@@ -146,6 +153,11 @@ export default class Game extends Phaser.Scene {
     if (minDistance > this.nextPlatformDistance) {
       this.addPlatform(this.game.config.width + 200);
     }
+  }
+
+  increaseScore() {
+    this.score++
+    this.scoreText.setText('score: ' + this.score);
   }
 
   addPlatform(posX) {
@@ -284,6 +296,16 @@ export default class Game extends Phaser.Scene {
 
       this.playerTouchingGround = false;
       this.player.setVelocityY(-13);
+    }
+  }
+
+  handleHealth() {
+    this.live = this.lives.getFirstAlive();
+    this.live.destroy();
+    this.health = this.health - 1;
+
+    if (this.health === 1) {
+      this.scene.start("gameover")
     }
   }
 

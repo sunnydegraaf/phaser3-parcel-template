@@ -1,6 +1,7 @@
 import Phaser from "phaser";
 
 import Game from "./scenes/Game";
+import GameOver from "./scenes/GameOver";
 import Preloader from "./scenes/Preloader";
 
 const config = {
@@ -31,7 +32,7 @@ const config = {
     width: 1400,
     height: 790,
   },
-  scene: [Preloader, Game],
+  scene: [Preloader, Game, GameOver],
 };
 
 export default new Phaser.Game(config);
