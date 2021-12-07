@@ -9,6 +9,8 @@ import playerImg from "../assets/spritesheets/SLEE-basis.png";
 import snowImg from "../assets/spritesheets/SNEEUW-basis.png";
 import playerShapes from "../assets/spritesheets/SLEE-shapes.json";
 
+import beginScreen from "../assets/images/beginscreen.png";
+
 export default class Preloader extends Phaser.Scene {
   constructor() {
     super("preloader");
@@ -31,6 +33,8 @@ export default class Preloader extends Phaser.Scene {
     this.load.image("lava", lava);
     this.load.image("heart", heart);
     this.load.image("slope2", slope2);
+    this.load.image("slope2", slope2);
+    this.load.image("beginscreen", beginScreen);
   }
 
   create() {

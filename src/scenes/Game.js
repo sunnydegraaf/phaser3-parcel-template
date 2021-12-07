@@ -12,6 +12,8 @@ export default class Game extends Phaser.Scene {
   }
 
   create() {
+    this.scene.start('startscene');
+
     //init
     this.score = 0;
     this.scoreText = this.add.text(1340, 60, 'score: 0', { fontSize: '32px', fill: '#000' }).setOrigin(1, 1);
