@@ -1,5 +1,8 @@
 //@ts-nocheck
 import Phaser from "phaser";
+import { createBiemAnimations } from "../lib/biemAnimations";
+import { createPlayerAnimations } from "../lib/playerAnimations";
+import { createSnowAnimations } from "../lib/snowAnimations";
 
 let gameOptions = {
   platformStartSpeed: 350,
@@ -12,15 +15,15 @@ export default class Game extends Phaser.Scene {
   }
 
   create() {
-    this.scene.start('startscene');
-
     //init
     this.score = 0;
-    this.scoreText = this.add.text(1340, 60, 'score: 0', { fontSize: '32px', fill: '#000' }).setOrigin(1, 1);
+    this.scoreText = this.add
+      .text(1340, 60, "score: 0", { fontSize: "32px", fill: "#000" })
+      .setOrigin(1, 1);
     this.gameSpeed = 20;
     const { height, width } = this.game.config;
     this.playerTouchingGround = false;
-    this.health = 2;
+    this.health = 4;
     this.lives = this.add.group();
     this.playerIsInvincible = false;
     this.cursorKeys = this.input.keyboard.createCursorKeys();
@@ -36,13 +39,6 @@ export default class Game extends Phaser.Scene {
     //renders
     this.renderHealth();
     this.renderPlayer();
-
-    this.time.addEvent({
-      callback: this.increaseScore,
-      callbackScope: this,
-      delay: 1000, // 1000 = 1 second
-      loop: true
-    })
 
     this.platformGroup = this.add.group({
       // once a platform is removed, it's added to the pool
@@ -97,7 +93,7 @@ export default class Game extends Phaser.Scene {
             category: 2,
             mask: 0,
           };
-          this.player.setPosition(400, 400);
+          // this.player.setPosition(400, 400);
           this.handleHealth();
           this.invincible();
         }
@@ -116,9 +112,9 @@ export default class Game extends Phaser.Scene {
             category: 2,
             mask: 0,
           };
-          this.handleHealth()
+          this.handleHealth();
           this.invincible();
-          this.player.setPosition(400, 400);
+          // this.player.setPosition(400, 400);
         }
       },
       this
@@ -133,15 +129,20 @@ export default class Game extends Phaser.Scene {
       this.move();
 
       this.snow.setPosition(
-        this.player.body.position.x - 95,
-        this.player.body.position.y + 48
+        this.player.body.position.x - 137,
+        this.player.body.position.y + 68
+      );
+
+      this.biem.setPosition(
+        this.player.body.position.x - 0,
+        this.player.body.position.y + 0
       );
     }
 
     let minDistance = this.game.config.width;
     this.platformGroup.getChildren().forEach(function (platform) {
-      platform.x += -6 * (delta / 40000) - 2;
-      platform.y -= (6 * (delta / 40000) + 2) / 4.695;
+      platform.x += -6 * (delta / 40000) - 5;
+      platform.y -= (6 * (delta / 40000) + 5) / 4.695;
       let platformDistance =
         this.game.config.width - platform.x - platform.displayWidth / 2;
       minDistance = Math.min(minDistance, platformDistance);
@@ -155,11 +156,9 @@ export default class Game extends Phaser.Scene {
     if (minDistance > this.nextPlatformDistance) {
       this.addPlatform(this.game.config.width + 200);
     }
-  }
 
-  increaseScore() {
-    this.score++
-    this.scoreText.setText('score: ' + this.score);
+    this.score += 1;
+    this.scoreText.setText("score: " + this.score);
   }
 
   addPlatform(posX) {
@@ -170,7 +169,7 @@ export default class Game extends Phaser.Scene {
     if (this.platformPool.getLength()) {
       platform = this.platformPool.getFirst();
       platform.x = posX;
-      platform.y = platform.body.label === "lava" ? 961 : 785;
+      platform.y = platform.body.label === "lava" ? 1005 : 758;
       platform.active = true;
       platform.visible = true;
       this.platformPool.remove(platform);
@@ -178,7 +177,7 @@ export default class Game extends Phaser.Scene {
       platform = this.matter.add
         .image(
           posX,
-          typeOfPlatform === "lava" ? 961 : 785,
+          typeOfPlatform === "lava" ? 1005 : 758,
           typeOfPlatform,
           null,
           {
@@ -187,7 +186,7 @@ export default class Game extends Phaser.Scene {
           }
         )
         .setAngle(13)
-        .setScale(0.7, 0.7);
+        .setScale(1, 1);
       this.platformGroup.add(platform);
     }
 
@@ -208,69 +207,40 @@ export default class Game extends Phaser.Scene {
 
     this.player = this.matter.add
       .sprite(400, -200, "player", null, {
-        shape: shapes["SLEE_Basis_00000"],
+        shape: shapes["SLEE_Basis_ALL_00000"],
       })
-      .setScale(0.7, 0.7);
+      .setScale(1, 1)
+      .setDepth(2);
+
+    this.whiteFlash = this.add
+      .rectangle(
+        this.game.config.width / 2,
+        this.game.config.height / 2,
+        this.game.config.width,
+        this.game.config.height,
+        0xffffff
+      )
+      .setDepth(4);
+
+    this.whiteFlash.visible = false;
+    this.whiteFlash.alpha = 0;
 
     this.player.body.position.y += 2;
+    this.snow = this.add.sprite(0, 0, "snow").setScale(1, 1).setDepth("-1");
+    this.biem = this.add.sprite(0, 0, "biem").setScale(1, 1);
 
-    this.snow = this.add.sprite(0, 0, "snow").setScale(0.7, 0.7);
+    createPlayerAnimations(this);
+    createSnowAnimations(this);
+    createBiemAnimations(this);
 
-    this.anims.create({
-      key: "sled",
-      frameRate: 30,
-      repeat: -1,
-      frames: this.anims.generateFrameNumbers("player", {
-        start: 0,
-        end: 29,
-      }),
-    });
-
-    this.anims.create({
-      key: "sled-jump",
-      frameRate: 30,
-      frames: this.anims.generateFrameNumbers("player", {
-        start: 30,
-        end: 81,
-      }),
-    });
-
-    this.anims.create({
-      key: "snow-idle",
-      frameRate: 30,
-      repeat: -1,
-      frames: this.anims.generateFrameNumbers("snow", {
-        start: 0,
-        end: 53,
-      }),
-    });
-
-    this.anims.create({
-      key: "snow-landing",
-      frameRate: 30,
-      frames: this.anims.generateFrameNumbers("snow", {
-        start: 54,
-        end: 73,
-      }),
-    });
-
-    this.anims.create({
-      key: "snow-jump",
-      frameRate: 60,
-      frames: this.anims.generateFrameNumbers("snow", {
-        start: 74,
-        end: 106,
-      }),
-    });
-
-    this.player.play("sled-jump");
+    this.player.play(`sled-jump_${this.health}`);
     this.snow.play("snow-jump");
 
     this.player.on(
       "animationcomplete",
       function (animation, frame) {
-        if (animation.key === "sled-jump") {
-          this.player.play("sled");
+        if (animation.key === `sled-jump_${this.health}`) {
+          this.player.play(`sled_${this.health}`);
         }
       },
       this
@@ -285,6 +255,16 @@ export default class Game extends Phaser.Scene {
       },
       this
     );
+
+    this.biem.on(
+      "animationcomplete",
+      function (animation, frame) {
+        if (animation.key === "biem!") {
+          this.biem.visible = false;
+        }
+      },
+      this
+    );
   }
 
   jump() {
@@ -293,7 +273,7 @@ export default class Game extends Phaser.Scene {
       this.player &&
       this.playerTouchingGround
     ) {
-      this.player.play("sled-jump");
+      this.player.play(`sled-jump_${this.health}`);
       this.snow.play("snow-jump");
 
       this.playerTouchingGround = false;
@@ -306,12 +286,19 @@ export default class Game extends Phaser.Scene {
     this.live.destroy();
     this.health = this.health - 1;
 
-    if (this.health === 1) {
-      this.scene.start("gameover")
+    if (this.health === 0) {
+      this.scene.start("gameover");
     }
   }
 
   invincible() {
+    this.biem.visible = true;
+    this.biem.play("biem!");
+
+    setTimeout(() => {
+      this.player.play(`sled_${this.health}`);
+    }, 100);
+
     this.playerIsInvincible = true;
     this.add.tween({
       targets: this.player,
@@ -353,15 +340,29 @@ export default class Game extends Phaser.Scene {
         getEnd: () => 0.3,
       },
     });
+
+    this.whiteFlash.visible = true;
+    this.add.tween({
+      targets: this.whiteFlash,
+      ease: "Sine.easeInOut",
+      duration: 75,
+      delay: 0,
+      yoyo: true,
+      repeat: 0,
+      alpha: {
+        getStart: () => 0,
+        getEnd: () => 0.6,
+      },
+    });
   }
 
   move() {
-    if (this.cursorKeys.left.isDown && this.player) {
-      this.player.setVelocityX(-4);
-    } else if (this.cursorKeys.right.isDown) {
-      this.player.setVelocityX(4);
-    } else {
-      this.player.setVelocityX(-0.07);
-    }
+    // if (this.cursorKeys.left.isDown && this.player) {
+    //   this.player.setVelocityX(-4);
+    // } else if (this.cursorKeys.right.isDown) {
+    //   this.player.setVelocityX(4);
+    // } else {
+    //   this.player.setVelocityX(-0.07);
+    // }
   }
 }

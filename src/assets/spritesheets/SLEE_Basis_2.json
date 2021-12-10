@@ -1,0 +1,1784 @@
+{
+	"textures": [
+		{
+			"image": "SLEE_Basis_2.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 3600,
+				"h": 2380
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "SLEE_Basis_2_00000.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00001.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 300,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00002.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 600,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00003.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 900,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00004.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1200,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00005.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1500,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00006.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1800,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00007.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2100,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00008.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2400,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00009.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2700,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00010.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 3000,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00011.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 3300,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00012.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 0,
+						"y": 340,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00013.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 300,
+						"y": 340,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00014.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 600,
+						"y": 340,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00015.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 900,
+						"y": 340,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00016.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1200,
+						"y": 340,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00017.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1500,
+						"y": 340,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00018.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1800,
+						"y": 340,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00019.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2100,
+						"y": 340,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00020.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2400,
+						"y": 340,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00021.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2700,
+						"y": 340,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00022.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 3000,
+						"y": 340,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00023.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 3300,
+						"y": 340,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00024.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 0,
+						"y": 680,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00025.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 300,
+						"y": 680,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00026.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 600,
+						"y": 680,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00027.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 900,
+						"y": 680,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00028.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1200,
+						"y": 680,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00029.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1500,
+						"y": 680,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_Basis_2_00030.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1800,
+						"y": 680,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00000.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2100,
+						"y": 680,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00001.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2400,
+						"y": 680,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00002.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2700,
+						"y": 680,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00003.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 3000,
+						"y": 680,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00004.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 3300,
+						"y": 680,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00005.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 0,
+						"y": 1020,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00006.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 300,
+						"y": 1020,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00007.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 600,
+						"y": 1020,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00008.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 900,
+						"y": 1020,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00009.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1200,
+						"y": 1020,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00010.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1500,
+						"y": 1020,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00011.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1800,
+						"y": 1020,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00012.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2100,
+						"y": 1020,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00013.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2400,
+						"y": 1020,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00014.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2700,
+						"y": 1020,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00015.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 3000,
+						"y": 1020,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00016.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 3300,
+						"y": 1020,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00017.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 0,
+						"y": 1360,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00018.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 300,
+						"y": 1360,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00019.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 600,
+						"y": 1360,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00020.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 900,
+						"y": 1360,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00021.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1200,
+						"y": 1360,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00022.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1500,
+						"y": 1360,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00023.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1800,
+						"y": 1360,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00024.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2100,
+						"y": 1360,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00025.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2400,
+						"y": 1360,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00026.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2700,
+						"y": 1360,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00027.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 3000,
+						"y": 1360,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00028.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 3300,
+						"y": 1360,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00029.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 0,
+						"y": 1700,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00030.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 300,
+						"y": 1700,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00031.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 600,
+						"y": 1700,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00032.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 900,
+						"y": 1700,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00033.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1200,
+						"y": 1700,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00034.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1500,
+						"y": 1700,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00035.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1800,
+						"y": 1700,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00036.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2100,
+						"y": 1700,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00037.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2400,
+						"y": 1700,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00038.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2700,
+						"y": 1700,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00039.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 3000,
+						"y": 1700,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00040.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 3300,
+						"y": 1700,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00041.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 0,
+						"y": 2040,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00042.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 300,
+						"y": 2040,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00043.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 600,
+						"y": 2040,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00044.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 900,
+						"y": 2040,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00045.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1200,
+						"y": 2040,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00046.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1500,
+						"y": 2040,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00047.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 1800,
+						"y": 2040,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00048.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2100,
+						"y": 2040,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00049.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2400,
+						"y": 2040,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00050.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 2700,
+						"y": 2040,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00051.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 3000,
+						"y": 2040,
+						"w": 300,
+						"h": 340
+					}
+				},
+				{
+					"filename": "SLEE_JUMP_2_00052.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 340
+					},
+					"frame": {
+						"x": 3300,
+						"y": 2040,
+						"w": 300,
+						"h": 340
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:c5d06e9b795ed741df8e842e9bfb4415:fcebd18fe2a610fbede0aba2c2ec80e0:22d37a09506e7628456b0e682760b86d$"
+	}
+}

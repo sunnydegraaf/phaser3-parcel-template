@@ -16,7 +16,7 @@ const config = {
   physics: {
     default: "matter",
     matter: {
-      debug: false,
+      debug: true,
       setBounds: {
         left: true,
         right: true,
@@ -33,7 +33,7 @@ const config = {
     width: 1400,
     height: 790,
   },
-  scene: [Preloader, Game, GameOver, StartScene],
+  scene: [Preloader, StartScene, Game, GameOver],
 };
 
 export default new Phaser.Game(config);
