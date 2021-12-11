@@ -1,6 +1,5 @@
 import Phaser from "phaser";
 import background from "../assets/images/background.png";
-import dumpster from "../assets/images/dumpster.png";
 import lava from "../assets/images/lava.png";
 import slope2 from "../assets/images/slope2.png";
 import heart from "../assets/images/heart.png";
@@ -12,8 +11,18 @@ import playerImg4 from "../assets/spritesheets/SLEE_Basis_4.png";
 
 import boom from "../assets/spritesheets/BIEM.png";
 
+import dumpsterImg from "../assets/spritesheets/DUMPSTER.png";
+
+import snowmanImg from "../assets/spritesheets/SNOWMAN.png";
+
+import popoImg from "../assets/spritesheets/POPO.png";
+
 import snowImg from "../assets/spritesheets/SNEEUW-basis.png";
+
 import playerShapes from "../assets/spritesheets/SLEE-shapes.json";
+import dumpsterShapes from "../assets/spritesheets/DUMPSTER-shapes.json";
+import snowmanShapes from "../assets/spritesheets/SNOWMAN-shapes.json";
+import popoShapes from "../assets/spritesheets/POPO-shapes.json";
 
 import beginScreen from "../assets/images/beginscreen.png";
 
@@ -54,10 +63,27 @@ export default class Preloader extends Phaser.Scene {
       frameHeight: 80,
     });
 
+    this.load.spritesheet("dumpster", dumpsterImg, {
+      frameWidth: 250,
+      frameHeight: 250,
+    });
+
+    this.load.spritesheet("snowman", snowmanImg, {
+      frameWidth: 350,
+      frameHeight: 350,
+    });
+
+    this.load.spritesheet("popo", popoImg, {
+      frameWidth: 350,
+      frameHeight: 350,
+    });
+
     this.load.json("shapes", playerShapes);
+    this.load.json("dumpster_shapes", dumpsterShapes);
+    this.load.json("snowman_shapes", snowmanShapes);
+    this.load.json("popo_shapes", popoShapes);
 
     this.load.image("background", background);
-    this.load.image("dumpster", dumpster);
     this.load.image("lava", lava);
     this.load.image("heart", heart);
     this.load.image("slope2", slope2);

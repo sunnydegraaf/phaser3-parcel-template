@@ -1,0 +1,335 @@
+{
+	"textures": [
+		{
+			"image": "DUMPSTER.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 2000,
+				"h": 500
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "Vuilcontainer_00000.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Vuilcontainer_00001.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 250,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Vuilcontainer_00002.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 500,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Vuilcontainer_00003.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 750,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Vuilcontainer_00004.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1000,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Vuilcontainer_00005.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1250,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Vuilcontainer_00006.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1500,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Vuilcontainer_00007.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1750,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Vuilcontainer_00008.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 0,
+						"y": 250,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Vuilcontainer_00009.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 250,
+						"y": 250,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Vuilcontainer_00010.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 500,
+						"y": 250,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Vuilcontainer_00011.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 750,
+						"y": 250,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Vuilcontainer_00012.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1000,
+						"y": 250,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Vuilcontainer_00013.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1250,
+						"y": 250,
+						"w": 250,
+						"h": 250
+					}
+				},
+				{
+					"filename": "Vuilcontainer_00014.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 250,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 250,
+						"h": 250
+					},
+					"frame": {
+						"x": 1500,
+						"y": 250,
+						"w": 250,
+						"h": 250
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:349f925296e078da43c30372a198d8fe:0b00eda22d22fcf0e42716f47a7eb647:5df4c6be35804e4cb74cff03acda203e$"
+	}
+}

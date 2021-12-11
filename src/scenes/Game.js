@@ -1,13 +1,11 @@
 //@ts-nocheck
 import Phaser from "phaser";
+import { addPlatform } from "../lib/addPlatform";
 import { createBiemAnimations } from "../lib/biemAnimations";
+import { collision } from "../lib/collision";
+import { createObstacleAnimations } from "../lib/obstacleAnimations";
 import { createPlayerAnimations } from "../lib/playerAnimations";
 import { createSnowAnimations } from "../lib/snowAnimations";
-
-let gameOptions = {
-  platformStartSpeed: 350,
-  spawnRange: [300, 1100],
-};
 
 export default class Game extends Phaser.Scene {
   constructor() {
@@ -21,6 +19,7 @@ export default class Game extends Phaser.Scene {
       .text(1340, 60, "score: 0", { fontSize: "32px", fill: "#000" })
       .setOrigin(1, 1);
     this.gameSpeed = 20;
+    this.jumps = 0;
     const { height, width } = this.game.config;
     this.playerTouchingGround = false;
     this.health = 4;
@@ -40,6 +39,9 @@ export default class Game extends Phaser.Scene {
     this.renderHealth();
     this.renderPlayer();
 
+    this.input.keyboard.on("keydown-SPACE", this.jump, this);
+    this.input.on("pointerdown", () => this.jump(true), this);
+
     this.platformGroup = this.add.group({
       // once a platform is removed, it's added to the pool
       removeCallback: function (platform) {
@@ -55,78 +57,21 @@ export default class Game extends Phaser.Scene {
       },
     });
 
-    this.addPlatform(this.game.config.width + 200);
+    addPlatform(this, this.game.config.width + 200);
 
     this.matter.world.on(
       "collisionstart",
       function (event, bodyA, bodyB) {
-        //collider player - slope
-        if (
-          (bodyA.label == "player" &&
-            bodyB.label == "slope" &&
-            this.playerTouchingGround == false) ||
-          (bodyB.label == "player" &&
-            bodyA.label == "slope" &&
-            this.playerTouchingGround == false)
-        ) {
-          this.playerTouchingGround = true;
-          this.snow.play("snow-landing");
-        }
-
-        // collider player - dumpster
-        if (
-          (bodyA.label == "player" &&
-            bodyB.label == "dumpster" &&
-            this.playerIsInvincible == false) ||
-          (bodyB.label == "player" &&
-            bodyA.label == "dumpster" &&
-            this.playerIsInvincible == false)
-        ) {
-          this.player.body.collisionFilter = {
-            group: 1,
-            category: 2,
-            mask: 0,
-          };
-
-          this.slope.body.collisionFilter = {
-            group: 1,
-            category: 2,
-            mask: 0,
-          };
-          // this.player.setPosition(400, 400);
-          this.handleHealth();
-          this.invincible();
-        }
-
-        if (
-          (bodyA.label == "player" &&
-            bodyB.label == "lava" &&
-            this.playerIsInvincible == false) ||
-          (bodyB.label == "player" &&
-            bodyA.label == "lava" &&
-            this.playerIsInvincible == false)
-        ) {
-          this.player.body.collisionFilter.group = 1;
-          this.slope.body.collisionFilter = {
-            group: 1,
-            category: 2,
-            mask: 0,
-          };
-          this.handleHealth();
-          this.invincible();
-          // this.player.setPosition(400, 400);
-        }
+        collision(this, bodyA, bodyB);
       },
       this
     );
   }
 
   update(delta) {
-    // console.log(this.player.body.collisionFilter);
     if (this.player) {
       this.player.setAngularVelocity(0);
-      this.jump();
-      this.move();
+      this.player.setVelocityX(-0.07);
 
       this.snow.setPosition(
         this.player.body.position.x - 137,
@@ -139,14 +84,14 @@ export default class Game extends Phaser.Scene {
       );
     }
 
-    let minDistance = this.game.config.width;
+    let minDistance = this.game.config.width + 600;
     this.platformGroup.getChildren().forEach(function (platform) {
-      platform.x += -6 * (delta / 40000) - 5;
-      platform.y -= (6 * (delta / 40000) + 5) / 4.695;
+      platform.x += -6 * (delta / 40000) - 6;
+      platform.y -= (6 * (delta / 40000) + 6) / 4.695;
       let platformDistance =
         this.game.config.width - platform.x - platform.displayWidth / 2;
       minDistance = Math.min(minDistance, platformDistance);
-      if (platform.x < -200) {
+      if (platform.x < -900) {
         this.platformGroup.killAndHide(platform);
         this.platformGroup.remove(platform);
       }
@@ -154,46 +99,11 @@ export default class Game extends Phaser.Scene {
 
     // adding new platforms
     if (minDistance > this.nextPlatformDistance) {
-      this.addPlatform(this.game.config.width + 200);
+      addPlatform(this, this.game.config.width + 200);
     }
 
     this.score += 1;
     this.scoreText.setText("score: " + this.score);
-  }
-
-  addPlatform(posX) {
-    let platform;
-    const typeOfPlatform =
-      Phaser.Math.Between(0, 1) === 0 ? "lava" : "dumpster";
-
-    if (this.platformPool.getLength()) {
-      platform = this.platformPool.getFirst();
-      platform.x = posX;
-      platform.y = platform.body.label === "lava" ? 1005 : 758;
-      platform.active = true;
-      platform.visible = true;
-      this.platformPool.remove(platform);
-    } else {
-      platform = this.matter.add
-        .image(
-          posX,
-          typeOfPlatform === "lava" ? 1005 : 758,
-          typeOfPlatform,
-          null,
-          {
-            isStatic: true,
-            label: typeOfPlatform,
-          }
-        )
-        .setAngle(13)
-        .setScale(1, 1);
-      this.platformGroup.add(platform);
-    }
-
-    this.nextPlatformDistance = Phaser.Math.Between(
-      gameOptions.spawnRange[0],
-      gameOptions.spawnRange[1]
-    );
   }
 
   renderHealth() {
@@ -208,6 +118,7 @@ export default class Game extends Phaser.Scene {
     this.player = this.matter.add
       .sprite(400, -200, "player", null, {
         shape: shapes["SLEE_Basis_ALL_00000"],
+        isSensor: true,
       })
       .setScale(1, 1)
       .setDepth(2);
@@ -232,6 +143,7 @@ export default class Game extends Phaser.Scene {
     createPlayerAnimations(this);
     createSnowAnimations(this);
     createBiemAnimations(this);
+    createObstacleAnimations(this);
 
     this.player.play(`sled-jump_${this.health}`);
     this.snow.play("snow-jump");
@@ -239,7 +151,10 @@ export default class Game extends Phaser.Scene {
     this.player.on(
       "animationcomplete",
       function (animation, frame) {
-        if (animation.key === `sled-jump_${this.health}`) {
+        if (
+          animation.key === `sled-jump_${this.health}` ||
+          animation.key === `sled-jump_Double_${this.health}`
+        ) {
           this.player.play(`sled_${this.health}`);
         }
       },
@@ -267,17 +182,16 @@ export default class Game extends Phaser.Scene {
     );
   }
 
-  jump() {
-    if (
-      this.cursorKeys.space.isDown &&
-      this.player &&
-      this.playerTouchingGround
-    ) {
-      this.player.play(`sled-jump_${this.health}`);
-      this.snow.play("snow-jump");
+  jump(pointer) {
+    if ((this.cursorKeys.space.isDown && this.player && !pointer) || pointer) {
+      if (this.jumps < 2) {
+        this.jumps === 0 && this.player.play(`sled-jump_${this.health}`);
+        this.jumps === 0 && this.snow.play("snow-jump");
 
-      this.playerTouchingGround = false;
-      this.player.setVelocityY(-13);
+        this.playerTouchingGround = false;
+        this.player.setVelocityY(this.jumps === 1 ? -10 : -12);
+        this.jumps++;
+      }
     }
   }
 
@@ -286,8 +200,10 @@ export default class Game extends Phaser.Scene {
     this.live.destroy();
     this.health = this.health - 1;
 
+    console.log(this.health);
+
     if (this.health === 0) {
-      this.scene.start("gameover");
+      this.scene.start("gameover", { score: this.score });
     }
   }
 

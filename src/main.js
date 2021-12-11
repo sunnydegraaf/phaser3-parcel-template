@@ -16,7 +16,7 @@ const config = {
   physics: {
     default: "matter",
     matter: {
-      debug: true,
+      debug: false,
       setBounds: {
         left: true,
         right: true,
@@ -30,8 +30,6 @@ const config = {
     mode: Phaser.Scale.FIT,
     parent: "my-game",
     autoCenter: Phaser.Scale.CENTER_BOTH,
-    width: 1400,
-    height: 790,
   },
   scene: [Preloader, StartScene, Game, GameOver],
 };

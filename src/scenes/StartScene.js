@@ -6,6 +6,18 @@ export default class StartScene extends Phaser.Scene {
   }
 
   create() {
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      }
+    }
+
+    toggleFullScreen();
+
     this.centerX = this.cameras.main.width / 2;
     this.centerY = this.cameras.main.height / 2;
     this.add.image(0, 0, "beginscreen").setOrigin(0, 0).setDepth(-1);

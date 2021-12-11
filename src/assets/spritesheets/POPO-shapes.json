@@ -1,0 +1,59 @@
+{
+  "generator_info": "Shape definitions generated with PhysicsEditor. Visit https://www.codeandweb.com/physicseditor",
+  "POPO_00000": {
+    "type": "fromPhysicsEditor",
+    "label": "POPO_00000",
+    "isStatic": false,
+    "density": 0.1,
+    "restitution": 0,
+    "friction": 0.1,
+    "frictionAir": 0.01,
+    "frictionStatic": 0.5,
+    "collisionFilter": {
+      "group": 0,
+      "category": 1,
+      "mask": 255
+    },
+    "fixtures": [
+      {
+        "label": "popo",
+        "isSensor": false,
+        "vertices": [
+          [
+            { "x": 55, "y": 296 },
+            { "x": 52, "y": 323 },
+            { "x": 93, "y": 328 },
+            { "x": 335, "y": 328 },
+            { "x": 82, "y": 289 }
+          ],
+          [
+            { "x": 163, "y": 175 },
+            { "x": 149, "y": 184 },
+            { "x": 139, "y": 196 },
+            { "x": 305, "y": 282 },
+            { "x": 260, "y": 209 },
+            { "x": 222, "y": 186 },
+            { "x": 178, "y": 176 }
+          ],
+          [
+            { "x": 232, "y": 184 },
+            { "x": 222, "y": 186 },
+            { "x": 260, "y": 209 }
+          ],
+          [
+            { "x": 90, "y": 290 },
+            { "x": 335, "y": 328 },
+            { "x": 305, "y": 282 },
+            { "x": 139, "y": 196 },
+            { "x": 125, "y": 191 }
+          ],
+          [
+            { "x": 319, "y": 297 },
+            { "x": 305, "y": 282 },
+            { "x": 335, "y": 328 }
+          ]
+        ]
+      }
+    ]
+  }
+}

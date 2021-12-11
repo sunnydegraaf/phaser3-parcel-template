@@ -1,0 +1,356 @@
+{
+	"textures": [
+		{
+			"image": "POPO.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1400,
+				"h": 1400
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "POPO_00000.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "POPO_00001.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 350,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "POPO_00002.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 700,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "POPO_00003.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 1050,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "POPO_00004.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 0,
+						"y": 350,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "POPO_00005.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 350,
+						"y": 350,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "POPO_00006.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 700,
+						"y": 350,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "POPO_00007.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 1050,
+						"y": 350,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "POPO_00008.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 0,
+						"y": 700,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "POPO_00009.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 350,
+						"y": 700,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "POPO_00010.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 700,
+						"y": 700,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "POPO_00011.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 1050,
+						"y": 700,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "POPO_00012.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 0,
+						"y": 1050,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "POPO_00013.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 350,
+						"y": 1050,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "POPO_00014.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 700,
+						"y": 1050,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "POPO_00015.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 1050,
+						"y": 1050,
+						"w": 350,
+						"h": 350
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:6e114b03d3ed0e16bac469f274aa3b09:3ff7ad2ab753ad532325bcf1f5f0a02c:0fbd923f5c72b9b990ab4255ecaa2c60$"
+	}
+}

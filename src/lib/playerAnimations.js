@@ -19,6 +19,15 @@ export const createPlayerAnimations = function (context) {
   });
 
   context.anims.create({
+    key: "sled-jump_Double_1",
+    frameRate: 25,
+    frames: context.anims.generateFrameNumbers("player", {
+      start: 51,
+      end: 83,
+    }),
+  });
+
+  context.anims.create({
     key: "sled_2",
     frameRate: 30,
     repeat: -1,
@@ -36,6 +45,16 @@ export const createPlayerAnimations = function (context) {
       end: 83,
     }),
   });
+
+  context.anims.create({
+    key: "sled-jump_Double_2",
+    frameRate: 25,
+    frames: context.anims.generateFrameNumbers("player2", {
+      start: 51,
+      end: 83,
+    }),
+  });
+
   context.anims.create({
     key: "sled_3",
     frameRate: 30,
@@ -54,6 +73,16 @@ export const createPlayerAnimations = function (context) {
       end: 83,
     }),
   });
+
+  context.anims.create({
+    key: "sled-jump_Double_3",
+    frameRate: 25,
+    frames: context.anims.generateFrameNumbers("player3", {
+      start: 51,
+      end: 83,
+    }),
+  });
+
   context.anims.create({
     key: "sled_4",
     frameRate: 30,
@@ -69,6 +98,15 @@ export const createPlayerAnimations = function (context) {
     frameRate: 30,
     frames: context.anims.generateFrameNumbers("player4", {
       start: 30,
+      end: 83,
+    }),
+  });
+
+  context.anims.create({
+    key: "sled-jump_Double_4",
+    frameRate: 25,
+    frames: context.anims.generateFrameNumbers("player4", {
+      start: 51,
       end: 83,
     }),
   });

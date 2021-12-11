@@ -1,0 +1,356 @@
+{
+	"textures": [
+		{
+			"image": "SNOWMAN.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1400,
+				"h": 1400
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "SNEEUWPOP_00000.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "SNEEUWPOP_00001.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 350,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "SNEEUWPOP_00002.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 700,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "SNEEUWPOP_00003.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 1050,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "SNEEUWPOP_00004.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 0,
+						"y": 350,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "SNEEUWPOP_00005.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 350,
+						"y": 350,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "SNEEUWPOP_00006.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 700,
+						"y": 350,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "SNEEUWPOP_00007.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 1050,
+						"y": 350,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "SNEEUWPOP_00008.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 0,
+						"y": 700,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "SNEEUWPOP_00009.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 350,
+						"y": 700,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "SNEEUWPOP_00010.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 700,
+						"y": 700,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "SNEEUWPOP_00011.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 1050,
+						"y": 700,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "SNEEUWPOP_00012.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 0,
+						"y": 1050,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "SNEEUWPOP_00013.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 350,
+						"y": 1050,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "SNEEUWPOP_00014.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 700,
+						"y": 1050,
+						"w": 350,
+						"h": 350
+					}
+				},
+				{
+					"filename": "SNEEUWPOP_00015.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 350,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 350,
+						"h": 350
+					},
+					"frame": {
+						"x": 1050,
+						"y": 1050,
+						"w": 350,
+						"h": 350
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:49f4975163c70f165efb857f48997698:0eb8509bb213265f8e84b5cecce99f14:e684f981df65c26cb044023d67853442$"
+	}
+}
