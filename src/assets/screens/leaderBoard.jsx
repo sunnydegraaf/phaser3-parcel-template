@@ -49,7 +49,9 @@ scores.sort(function (a, b) {
 const leaderBoard = (
     <div className="col-12">
         <div className="screen">
-            <div className="screen-overlay"></div>
+            <span className="screen-overlay two"></span>
+            <span className="screen-overlay three"></span>
+            <span className="screen-overlay"></span>
             <h1>High scores</h1>
             <ol className="list">
                 {scores.map(score => {
