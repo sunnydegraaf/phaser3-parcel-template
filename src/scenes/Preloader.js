@@ -3,8 +3,9 @@ import background from "../assets/images/background.png";
 import lava from "../assets/images/lava.png";
 import slope2 from "../assets/images/slope2.png";
 import heart from "../assets/images/heart.png";
-import bgBack from "../assets/images/BG_BACK_01.png"
-import bgFront from "../assets/images/BG_FRONT_01.png"
+import bgBack from "../assets/images/BG_BACK_01.png";
+import bgFront from "../assets/images/BG_FRONT_01.png";
+// import scoreboard from "../assets/images/SCOREBOARD.png";
 
 import playerImg1 from "../assets/spritesheets/SLEE_Basis_1.png";
 import playerImg2 from "../assets/spritesheets/SLEE_Basis_2.png";
@@ -86,6 +87,7 @@ export default class Preloader extends Phaser.Scene {
     this.load.json("popo_shapes", popoShapes);
 
     this.load.image("background", background);
+    // this.load.image("scoreboard", scoreboard);
     this.load.image("lava", lava);
     this.load.image("heart", heart);
     this.load.image("slope2", slope2);
