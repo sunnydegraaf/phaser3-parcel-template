@@ -1,4 +1,5 @@
 import Phaser from "phaser";
+import leaderBoard from "../assets/screens/leaderBoard";
 
 export default class GameOver extends Phaser.Scene {
   constructor() {
@@ -10,10 +11,10 @@ export default class GameOver extends Phaser.Scene {
   }
 
   create() {
-    this.centerX = this.cameras.main.width / 2;
-    this.centerY = this.cameras.main.height / 2;
-    this.add.image(0, 0, "beginscreen").setOrigin(0, 0).setDepth(-1);
+    this.add.dom(0, 0, leaderBoard).setOrigin(0, 0)
   }
 
-  update() {}
+  update() {
+
+  }
 }

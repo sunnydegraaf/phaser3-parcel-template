@@ -13,6 +13,7 @@ export default class Game extends Phaser.Scene {
   }
 
   create() {
+    this.cameras.main.backgroundColor.setTo(103, 105, 251)
     //init
     this.score = 0;
     this.scoreText = this.add
@@ -27,13 +28,16 @@ export default class Game extends Phaser.Scene {
     this.playerIsInvincible = false;
     this.cursorKeys = this.input.keyboard.createCursorKeys();
     this.frameTime = 0;
-    this.add.image(0, 0, "background").setOrigin(0, 0).setDepth(-1);
     this.slope = this.matter.add
       .image(width * 0.4, height + 50, "slope2", null, {
         isStatic: true,
         label: "slope",
       })
       .setAngle(12);
+
+    this.backgroundBack = this.add.image(-800, -400, "bgBack").setDepth(-2).setOrigin(0, 0)
+    this.backgroundBack.alpha = 0.75
+    this.backgroundFront = this.add.image(700, 270, "bgFront").setDepth(-1).setOrigin(0, 0)
 
     //renders
     this.renderHealth();
@@ -69,6 +73,23 @@ export default class Game extends Phaser.Scene {
   }
 
   update(delta) {
+
+    this.backgroundBack.x += -6 * (delta / 150000) - 6;
+    this.backgroundBack.y -= (6 * (delta / 150000) + 6) / 4.695;
+
+    this.backgroundFront.x += -6 * (delta / 40000) - 6;
+    this.backgroundFront.y -= (6 * (delta / 40000) + 6) / 4.695;
+
+    if (this.backgroundBack.x < -2934) {
+      this.backgroundBack.x = 1400
+      this.backgroundBack.y = 0
+    }
+
+    if (this.backgroundFront.x < -5156) {
+      this.backgroundFront.x = 1400
+      this.backgroundFront.y = 410
+    }
+
     if (this.player) {
       this.player.setAngularVelocity(0);
       this.player.setVelocityX(-0.07);

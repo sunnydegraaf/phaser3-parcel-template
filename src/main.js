@@ -10,13 +10,14 @@ const config = {
     target: 60,
     forceSetTimeOut: true,
   },
+  parent: 'phaser',
   type: Phaser.AUTO,
   width: 1400,
   height: 790,
   physics: {
     default: "matter",
     matter: {
-      debug: false,
+      debug: true,
       setBounds: {
         left: true,
         right: true,
@@ -30,6 +31,9 @@ const config = {
     mode: Phaser.Scale.FIT,
     parent: "my-game",
     autoCenter: Phaser.Scale.CENTER_BOTH,
+  },
+  dom: {
+    createContainer: true
   },
   scene: [Preloader, StartScene, Game, GameOver],
 };

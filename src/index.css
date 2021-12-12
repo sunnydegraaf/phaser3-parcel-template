@@ -17,11 +17,96 @@ body {
   }
 }
 
+.col-12 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #5B44FC;
+  display: flex !important;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-12 h1 {
+  margin: 0;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  font-size: 5em;
+  text-transform: uppercase;
+  color: #F6C61D;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #220065;
+  text-shadow: -4px 4px 0px #220065; 
+}
+
+.col-12 li {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: #FCF7F7;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #220065;
+}
+
+li span {
+  margin-left: 1em;
+}
+
+li.player {
+  color: #F6C61D;
+}
+
+li .score {
+  float: right;
+}
+
+.screen {
+  padding: 50px;
+  border-radius: 10px;
+  background-color: #3E23C2;
+  height: auto;
+  width: 50%;
+}
+
+.col-12 input {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.5em;
+  padding: 20px;
+  width: 75%;
+  border-radius: 10px;
+}
+
+input::placeholder {
+    /* font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.5em; */
+}
+
+p {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
 * {
   box-sizing: border-box;
 }
 
 canvas {
+  overflow: hidden;
   border-radius: 30px;
   border: #000 1px solid;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,

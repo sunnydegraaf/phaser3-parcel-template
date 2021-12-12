@@ -3,6 +3,8 @@ import background from "../assets/images/background.png";
 import lava from "../assets/images/lava.png";
 import slope2 from "../assets/images/slope2.png";
 import heart from "../assets/images/heart.png";
+import bgBack from "../assets/images/BG_BACK_01.png"
+import bgFront from "../assets/images/BG_FRONT_01.png"
 
 import playerImg1 from "../assets/spritesheets/SLEE_Basis_1.png";
 import playerImg2 from "../assets/spritesheets/SLEE_Basis_2.png";
@@ -89,9 +91,11 @@ export default class Preloader extends Phaser.Scene {
     this.load.image("slope2", slope2);
     this.load.image("slope2", slope2);
     this.load.image("beginscreen", beginScreen);
+    this.load.image("bgBack", bgBack)
+    this.load.image("bgFront", bgFront)
   }
 
   create() {
-    this.scene.start("startscene");
+    this.scene.start("game");
   }
 }
