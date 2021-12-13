@@ -1,33 +1,33 @@
 import Phaser from "phaser";
-import background from "../assets/images/background.png";
-import lava from "../assets/images/lava.png";
-import slope2 from "../assets/images/slope2.png";
-import heart from "../assets/images/heart.png";
-import bgBack from "../assets/images/BG_BACK_01.png";
-import bgFront from "../assets/images/BG_FRONT_01.png";
-// import scoreboard from "../assets/images/SCOREBOARD.png";
+import background from "../assets/images/tinified/background.png";
+import lava from "../assets/images/tinified/lava.png";
+import slope2 from "../assets/images/tinified/slope2.png";
+import heart from "../assets/images/tinified/heart.png";
+import bgBack from "../assets/images/tinified/BG_BACK_01.png";
+import bgFront from "../assets/images/tinified/BG_FRONT_01.png";
+// import scoreboard from "../assets/images/tinified/SCOREBOARD.png";
 
-import playerImg1 from "../assets/spritesheets/SLEE_Basis_1.png";
-import playerImg2 from "../assets/spritesheets/SLEE_Basis_2.png";
-import playerImg3 from "../assets/spritesheets/SLEE_Basis_3.png";
-import playerImg4 from "../assets/spritesheets/SLEE_Basis_4.png";
+import playerImg1 from "../assets/spritesheets/tinified/SLEE_Basis_1.png";
+import playerImg2 from "../assets/spritesheets/tinified/SLEE_Basis_2.png";
+import playerImg3 from "../assets/spritesheets/tinified/SLEE_Basis_3.png";
+import playerImg4 from "../assets/spritesheets/tinified/SLEE_Basis_4.png";
 
-import boom from "../assets/spritesheets/BIEM.png";
+import boom from "../assets/spritesheets/tinified/BIEM.png";
 
-import dumpsterImg from "../assets/spritesheets/DUMPSTER.png";
+import dumpsterImg from "../assets/spritesheets/tinified/DUMPSTER.png";
 
-import snowmanImg from "../assets/spritesheets/SNOWMAN.png";
+import snowmanImg from "../assets/spritesheets/tinified/SNOWMAN.png";
 
-import popoImg from "../assets/spritesheets/POPO.png";
+import popoImg from "../assets/spritesheets/tinified/POPO.png";
 
-import snowImg from "../assets/spritesheets/SNEEUW-basis.png";
+import snowImg from "../assets/spritesheets/tinified/SNEEUW-basis.png";
 
 import playerShapes from "../assets/spritesheets/SLEE-shapes.json";
 import dumpsterShapes from "../assets/spritesheets/DUMPSTER-shapes.json";
 import snowmanShapes from "../assets/spritesheets/SNOWMAN-shapes.json";
 import popoShapes from "../assets/spritesheets/POPO-shapes.json";
 
-import beginScreen from "../assets/images/beginscreen.png";
+import beginScreen from "../assets/images/tinified/beginscreen.png";
 
 export default class Preloader extends Phaser.Scene {
   constructor() {
