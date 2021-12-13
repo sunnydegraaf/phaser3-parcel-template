@@ -16,9 +16,8 @@ export default class Game extends Phaser.Scene {
     this.cameras.main.backgroundColor.setTo(103, 105, 251)
     //init
     this.score = 0;
-    this.scoreText = this.add
-      .text(1340, 60, "score: 0", { fontSize: "32px", fill: "#000" })
-      .setOrigin(1, 1);
+    this.scoreText = this.add.text(1340, 70, "score: 0", { fill: '#bf94ff' }).setOrigin(1, 1)
+    this.scoreText.setStroke('#3f2dbf', 5)
     this.gameSpeed = 20;
     this.jumps = 0;
     const { height, width } = this.game.config;
@@ -124,12 +123,15 @@ export default class Game extends Phaser.Scene {
     }
 
     this.score += 1;
-    this.scoreText.setText("score: " + this.score);
+    this.scoreText.setText("SCORE: " + this.score)
+      .setFontFamily('Arial')
+      .setFontSize(32)
+      .setFontStyle('bold')
   }
 
   renderHealth() {
     for (this.i = 1; this.i <= this.health; this.i++) {
-      this.lives.create(60 * this.i, 60, "heart");
+      this.lives.create((300 - 60 * this.i), 60, "heart");
     }
   }
 

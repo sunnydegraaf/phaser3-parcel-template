@@ -17,7 +17,7 @@ const config = {
   physics: {
     default: "matter",
     matter: {
-      debug: true,
+      debug: false,
       setBounds: {
         left: true,
         right: true,
