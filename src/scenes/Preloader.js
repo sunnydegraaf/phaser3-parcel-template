@@ -13,13 +13,9 @@ import playerImg3 from "../assets/spritesheets/tinified/SLEE_Basis_3.png";
 import playerImg4 from "../assets/spritesheets/tinified/SLEE_Basis_4.png";
 
 import boom from "../assets/spritesheets/tinified/BIEM.png";
-
 import dumpsterImg from "../assets/spritesheets/tinified/DUMPSTER.png";
-
 import snowmanImg from "../assets/spritesheets/tinified/SNOWMAN.png";
-
 import popoImg from "../assets/spritesheets/tinified/POPO.png";
-
 import snowImg from "../assets/spritesheets/tinified/SNEEUW-basis.png";
 
 import playerShapes from "../assets/spritesheets/SLEE-shapes.json";
@@ -28,6 +24,12 @@ import snowmanShapes from "../assets/spritesheets/SNOWMAN-shapes.json";
 import popoShapes from "../assets/spritesheets/POPO-shapes.json";
 
 import beginScreen from "../assets/images/tinified/beginscreen.png";
+
+import livesTotal from "../assets/images/LIVES/LIVES_TOTAL.png";
+import lives01 from "../assets/images/LIVES/LIVES_01.png"
+import lives02 from "../assets/images/LIVES/LIVES_02.png"
+import lives03 from "../assets/images/LIVES/LIVES_03.png"
+import lives04 from "../assets/images/LIVES/LIVES_04.png"
 
 export default class Preloader extends Phaser.Scene {
   constructor() {
@@ -95,6 +97,12 @@ export default class Preloader extends Phaser.Scene {
     this.load.image("beginscreen", beginScreen);
     this.load.image("bgBack", bgBack)
     this.load.image("bgFront", bgFront)
+
+    this.load.image("livesTotal", livesTotal);
+    this.load.image("lives01", lives01);
+    this.load.image("lives02", lives02);
+    this.load.image("lives03", lives03);
+    this.load.image("lives04", lives04);
   }
 
   create() {

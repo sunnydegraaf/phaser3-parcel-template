@@ -13,6 +13,9 @@ export default class Game extends Phaser.Scene {
   }
 
   create() {
+
+    this.totalHealth = this.add.image(50, 25, 'livesTotal').setOrigin(0, 0)
+
     this.cameras.main.backgroundColor.setTo(103, 105, 251)
     //init
     this.score = 0;
@@ -131,7 +134,7 @@ export default class Game extends Phaser.Scene {
 
   renderHealth() {
     for (this.i = 1; this.i <= this.health; this.i++) {
-      this.lives.create((300 - 60 * this.i), 60, "heart");
+      this.lives.create(48.5 + (0.5 * this.i), 25, `lives0${this.i}`).setOrigin(0, 0);
     }
   }
 
