@@ -33,6 +33,12 @@ import lives04 from "../assets/images/LIVES/LIVES_04.png"
 
 import score from "../assets/images/SCORE/SCORE.png"
 
+import crash from "../assets/audio/Crash.mp3"
+import jump from "../assets/audio/Jump.mp3"
+import game from "../assets/audio/Game.mp3"
+import menu from "../assets/audio/Menu.mp3"
+import start from "../assets/audio/Start.mp3"
+
 export default class Preloader extends Phaser.Scene {
   constructor() {
     super("preloader");
@@ -91,7 +97,6 @@ export default class Preloader extends Phaser.Scene {
     this.load.json("popo_shapes", popoShapes);
 
     this.load.image("background", background);
-    // this.load.image("scoreboard", scoreboard);
     this.load.image("lava", lava);
     this.load.image("heart", heart);
     this.load.image("slope2", slope2);
@@ -105,8 +110,15 @@ export default class Preloader extends Phaser.Scene {
     this.load.image("lives02", lives02);
     this.load.image("lives03", lives03);
     this.load.image("lives04", lives04);
-
     this.load.image("score", score);
+
+    this.load.audio("crash", crash)
+    this.load.audio("jump", jump)
+    this.load.audio("game", game)
+    this.load.audio("menu", menu)
+    this.load.audio("start", start)
+
+
   }
 
   create() {

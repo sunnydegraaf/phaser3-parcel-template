@@ -14,6 +14,15 @@ export default class Game extends Phaser.Scene {
 
   create() {
 
+    //audio
+    this.crashSound = this.sound.add("crash")
+    this.jumpSound = this.sound.add("jump")
+    this.gameSound = this.sound.add("game", { loop: true })
+
+    this.gameSound.play()
+
+    // this.sound.setDecodedCallback([this.crashSound, this.jumpSound, this.gameSound, this.menuSound, this.startSound], start, this);
+
     this.totalHealth = this.add.image(50, 25, 'livesTotal').setOrigin(0, 0)
     this.scoreReference = this.add.image(1350, 25, 'score').setOrigin(1, 0)
 
@@ -213,6 +222,7 @@ export default class Game extends Phaser.Scene {
       if (this.jumps < 2) {
         this.jumps === 0 && this.player.play(`sled-jump_${this.health}`);
         this.jumps === 0 && this.snow.play("snow-jump");
+        this.jumpSound.play();
 
         this.playerTouchingGround = false;
         this.player.setVelocityY(this.jumps === 1 ? -10 : -12);
@@ -229,6 +239,7 @@ export default class Game extends Phaser.Scene {
     console.log(this.health);
 
     if (this.health === 0) {
+      this.gameSound.stop()
       this.scene.start("gameover", { score: this.score });
     }
   }

@@ -6,6 +6,8 @@ export default class StartScene extends Phaser.Scene {
   }
 
   create() {
+    this.startSound = this.sound.add("start", { loop: true })
+    this.startSound.play();
     function toggleFullScreen() {
       if (!document.fullscreenElement) {
         document.documentElement.requestFullscreen();
@@ -31,6 +33,7 @@ export default class StartScene extends Phaser.Scene {
       .setInteractive({ useHandCursor: true });
 
     button.on("pointerup", () => {
+      this.startSound.stop();
       this.scene.start("game");
     });
   }
