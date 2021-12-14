@@ -15,12 +15,15 @@ export default class Game extends Phaser.Scene {
   create() {
 
     this.totalHealth = this.add.image(50, 25, 'livesTotal').setOrigin(0, 0)
+    this.scoreReference = this.add.image(1350, 25, 'score').setOrigin(1, 0)
 
     this.cameras.main.backgroundColor.setTo(103, 105, 251)
     //init
     this.score = 0;
-    this.scoreText = this.add.text(1340, 70, "score: 0", { fill: '#bf94ff' }).setOrigin(1, 1)
-    this.scoreText.setStroke('#3f2dbf', 5)
+    this.scoreText = this.add.text(1183, 47, "SCORE", { fill: '#bf94ff' }).setOrigin(1, 0)
+    this.scoreNumberText = this.add.text(1325, 47, "0", { fill: '#5B44FC' }).setOrigin(1, 0)
+    this.scoreText.setFontFamily('Arial').setFontSize(30).setFontStyle('bold')
+    this.scoreNumberText.setFontFamily('Arial').setFontSize(30).setFontStyle('bold').setAlign('right')
     this.gameSpeed = 20;
     this.jumps = 0;
     const { height, width } = this.game.config;
@@ -126,10 +129,7 @@ export default class Game extends Phaser.Scene {
     }
 
     this.score += 1;
-    this.scoreText.setText("SCORE: " + this.score)
-      .setFontFamily('Arial')
-      .setFontSize(32)
-      .setFontStyle('bold')
+    this.scoreNumberText.setText(this.score);
   }
 
   renderHealth() {

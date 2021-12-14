@@ -31,6 +31,8 @@ import lives02 from "../assets/images/LIVES/LIVES_02.png"
 import lives03 from "../assets/images/LIVES/LIVES_03.png"
 import lives04 from "../assets/images/LIVES/LIVES_04.png"
 
+import score from "../assets/images/SCORE/SCORE.png"
+
 export default class Preloader extends Phaser.Scene {
   constructor() {
     super("preloader");
@@ -103,6 +105,8 @@ export default class Preloader extends Phaser.Scene {
     this.load.image("lives02", lives02);
     this.load.image("lives03", lives03);
     this.load.image("lives04", lives04);
+
+    this.load.image("score", score);
   }
 
   create() {
