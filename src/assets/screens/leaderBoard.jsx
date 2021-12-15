@@ -1,5 +1,13 @@
+// @ts-nocheck
+
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
+import {
+  getFirestore,
+  collection,
+  limit,
+  getDocs,
+  query,
+} from "firebase/firestore";
 
 const firebaseApp = initializeApp({
   apiKey: "AIzaSyAPM4k803smpISk7JkHkDdTCFCvh8GW20U",
@@ -13,62 +21,46 @@ const firebaseApp = initializeApp({
 const db = getFirestore();
 
 async function getData() {
-  const querySnapshot = await getDocs(collection(db, "leaderboard"));
+  const q = query(collection(db, "leaderboard"), limit(5));
+
+  const querySnapshot = await getDocs(q);
   const scoreList = await querySnapshot.docs.map((doc) => doc.data());
-  console.log(scoreList);
   return scoreList;
 }
 
-let scores = [
-  {
-    username: "Nick",
-    score: 20,
-  },
-  {
-    username: "Nick",
-    score: 7,
-  },
-  {
-    username: "Nick",
-    score: 20,
-  },
-  {
-    username: "Nick",
-    score: 20,
-  },
-  {
-    username: "Nick",
-    score: 21,
-  },
-];
+const leaderBoard = async (score, context) => {
+  const data = await getData();
 
-scores.sort(function (a, b) {
-  return parseFloat(b.score) - parseFloat(a.score);
-});
+  data.sort(function (a, b) {
+    return parseFloat(b.score) - parseFloat(a.score);
+  });
 
-const leaderBoard = (
-  <div className="col-12">
-    <div className="screen">
-      <span className="screen-overlay two"></span>
-      <span className="screen-overlay three"></span>
-      <span className="screen-overlay"></span>
-      <h1>High scores</h1>
-      <ol className="list">
-        {scores.map((score) => {
-          return (
-            <li>
-              <span className="username">{score.username}</span>
-              <span className="score">{score.score}</span>
-            </li>
-          );
-        })}
-        <li className="player">
-          <span className="username">Je moeder</span>
-          <span className="score">01</span>
-        </li>
-      </ol>
+  return (
+    <div className="col-12">
+      <div className="screen">
+        <span className="screen-overlay two"></span>
+        <span className="screen-overlay three"></span>
+        <span className="screen-overlay"></span>
+        <h1>High scores</h1>
+        <ol className="list">
+          {data.map((score) => {
+            return (
+              <li>
+                <span className="username">{score.username}</span>
+                <span className="score">{score.score}</span>
+              </li>
+            );
+          })}
+          <li value={12} className="player">
+            <span id="username" className="username">
+              {context.name}
+            </span>
+            <span className="score">{score}</span>
+          </li>
+        </ol>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default leaderBoard;

@@ -10,7 +10,7 @@ const config = {
     target: 60,
     forceSetTimeOut: true,
   },
-  parent: 'phaser',
+  parent: "phaser",
   type: Phaser.AUTO,
   width: 1400,
   height: 790,
@@ -24,7 +24,7 @@ const config = {
         top: false,
         bottom: true,
       },
-      gravity: { y: 1 },
+      gravity: { y: 1.3 },
     },
   },
   scale: {
@@ -33,7 +33,7 @@ const config = {
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
   dom: {
-    createContainer: true
+    createContainer: true,
   },
   scene: [Preloader, StartScene, Game, GameOver],
 };

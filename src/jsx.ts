@@ -1,5 +1,7 @@
-import * as React from 'jsx-dom'
+//@ts-nocheck
 
-window['React'] = React
+import * as React from "jsx-dom";
 
-export default React
+window["React"] = React;
+
+export default React;

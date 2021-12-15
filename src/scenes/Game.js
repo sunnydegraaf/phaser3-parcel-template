@@ -13,26 +13,36 @@ export default class Game extends Phaser.Scene {
   }
 
   create() {
+    this.totalHealth = this.add.image(50, 25, "livesTotal").setOrigin(0, 0);
+    this.scoreReference = this.add.image(1350, 25, "score").setOrigin(1, 0);
 
     //audio
-    this.crashSound = this.sound.add("crash")
-    this.jumpSound = this.sound.add("jump")
-    this.gameSound = this.sound.add("game", { loop: true })
+    this.crashSound = this.sound.add("crash");
+    this.jumpSound = this.sound.add("jump");
+    this.gameSound = this.sound.add("game", { loop: true });
 
-    this.gameSound.play()
+    this.gameSound.play();
 
     // this.sound.setDecodedCallback([this.crashSound, this.jumpSound, this.gameSound, this.menuSound, this.startSound], start, this);
 
-    this.totalHealth = this.add.image(50, 25, 'livesTotal').setOrigin(0, 0)
-    this.scoreReference = this.add.image(1350, 25, 'score').setOrigin(1, 0)
+    this.totalHealth = this.add.image(50, 25, "livesTotal").setOrigin(0, 0);
+    this.scoreReference = this.add.image(1350, 25, "score").setOrigin(1, 0);
 
-    this.cameras.main.backgroundColor.setTo(103, 105, 251)
+    this.cameras.main.backgroundColor.setTo(103, 105, 251);
     //init
     this.score = 0;
-    this.scoreText = this.add.text(1183, 47, "SCORE", { fill: '#bf94ff' }).setOrigin(1, 0)
-    this.scoreNumberText = this.add.text(1325, 47, "0", { fill: '#5B44FC' }).setOrigin(1, 0)
-    this.scoreText.setFontFamily('Arial').setFontSize(30).setFontStyle('bold')
-    this.scoreNumberText.setFontFamily('Arial').setFontSize(30).setFontStyle('bold').setAlign('right')
+    this.scoreText = this.add
+      .text(1183, 47, "SCORE", { fill: "#bf94ff" })
+      .setOrigin(1, 0);
+    this.scoreNumberText = this.add
+      .text(1325, 47, "0", { fill: "#5B44FC" })
+      .setOrigin(1, 0);
+    this.scoreText.setFontFamily("Arial").setFontSize(30).setFontStyle("bold");
+    this.scoreNumberText
+      .setFontFamily("Arial")
+      .setFontSize(30)
+      .setFontStyle("bold")
+      .setAlign("right");
     this.gameSpeed = 20;
     this.jumps = 0;
     const { height, width } = this.game.config;
@@ -49,9 +59,15 @@ export default class Game extends Phaser.Scene {
       })
       .setAngle(12);
 
-    this.backgroundBack = this.add.image(-800, -400, "bgBack").setDepth(-2).setOrigin(0, 0)
-    this.backgroundBack.alpha = 0.75
-    this.backgroundFront = this.add.image(700, 270, "bgFront").setDepth(-1).setOrigin(0, 0)
+    this.backgroundBack = this.add
+      .image(-800, -400, "bgBack")
+      .setDepth(-2)
+      .setOrigin(0, 0);
+    this.backgroundBack.alpha = 0.75;
+    this.backgroundFront = this.add
+      .image(700, 270, "bgFront")
+      .setDepth(-1)
+      .setOrigin(0, 0);
 
     //renders
     this.renderHealth();
@@ -87,7 +103,6 @@ export default class Game extends Phaser.Scene {
   }
 
   update(delta) {
-
     this.backgroundBack.x += -6 * (delta / 150000) - 6;
     this.backgroundBack.y -= (6 * (delta / 150000) + 6) / 4.695;
 
@@ -95,13 +110,13 @@ export default class Game extends Phaser.Scene {
     this.backgroundFront.y -= (6 * (delta / 40000) + 6) / 4.695;
 
     if (this.backgroundBack.x < -2934) {
-      this.backgroundBack.x = 1400
-      this.backgroundBack.y = 0
+      this.backgroundBack.x = 1400;
+      this.backgroundBack.y = 0;
     }
 
     if (this.backgroundFront.x < -5156) {
-      this.backgroundFront.x = 1400
-      this.backgroundFront.y = 410
+      this.backgroundFront.x = 1400;
+      this.backgroundFront.y = 410;
     }
 
     if (this.player) {
@@ -121,8 +136,8 @@ export default class Game extends Phaser.Scene {
 
     let minDistance = this.game.config.width + 600;
     this.platformGroup.getChildren().forEach(function (platform) {
-      platform.x += -6 * (delta / 40000) - 6;
-      platform.y -= (6 * (delta / 40000) + 6) / 4.695;
+      platform.x += -6 * (delta / 40000) - 8;
+      platform.y -= (6 * (delta / 40000) + 8) / 4.695;
       let platformDistance =
         this.game.config.width - platform.x - platform.displayWidth / 2;
       minDistance = Math.min(minDistance, platformDistance);
@@ -143,7 +158,9 @@ export default class Game extends Phaser.Scene {
 
   renderHealth() {
     for (this.i = 1; this.i <= this.health; this.i++) {
-      this.lives.create(48.5 + (0.5 * this.i), 25, `lives0${this.i}`).setOrigin(0, 0);
+      this.lives
+        .create(48.5 + 0.5 * this.i, 25, `lives0${this.i}`)
+        .setOrigin(0, 0);
     }
   }
 
@@ -225,7 +242,7 @@ export default class Game extends Phaser.Scene {
         this.jumpSound.play();
 
         this.playerTouchingGround = false;
-        this.player.setVelocityY(this.jumps === 1 ? -10 : -12);
+        this.player.setVelocityY(this.jumps === 1 ? -12 : -14);
         this.jumps++;
       }
     }
@@ -239,7 +256,7 @@ export default class Game extends Phaser.Scene {
     console.log(this.health);
 
     if (this.health === 0) {
-      this.gameSound.stop()
+      this.gameSound.stop();
       this.scene.start("gameover", { score: this.score });
     }
   }
