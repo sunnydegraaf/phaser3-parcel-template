@@ -112,8 +112,8 @@ export default class Preloader extends Phaser.Scene {
     });
 
     this.load.spritesheet("lava", lavaImg, {
-      frameWidth: 300,
-      frameHeight: 370,
+      frameWidth: 308,
+      frameHeight: 385,
     });
 
     this.load.json("shapes", playerShapes);
@@ -163,6 +163,7 @@ export default class Preloader extends Phaser.Scene {
     this.load.on(
       "complete",
       () => {
+        this.done = true;
         element.getChildByID("text").innerText = "press any button";
       },
       this
@@ -171,20 +172,26 @@ export default class Preloader extends Phaser.Scene {
     this.input.keyboard.on(
       "keydown",
       function (event) {
-        this.scene.start("startscene");
+        if (this.done) {
+          this.scene.start("startscene");
+        }
       },
       this
     );
 
     element.addListener("click");
     element.on("click", () => {
-      this.scene.start("startscene");
+      if (this.done) {
+        this.scene.start("startscene");
+      }
     });
 
     this.input.on(
       "pointerdown",
       function (event) {
-        this.scene.start("startscene");
+        if (this.done) {
+          this.scene.start("startscene");
+        }
       },
       this
     );

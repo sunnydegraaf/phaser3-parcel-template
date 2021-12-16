@@ -67,7 +67,7 @@ export default class Game extends Phaser.Scene {
       .setOrigin(0, 0);
     this.backgroundBack.alpha = 0.75;
     this.backgroundFront = this.add
-      .image(700, 270, "bgFront")
+      .image(700, 130, "bgFront")
       .setDepth(-1)
       .setOrigin(0, 0);
 
@@ -120,9 +120,9 @@ export default class Game extends Phaser.Scene {
       this.backgroundBack.y = 0;
     }
 
-    if (this.backgroundFront.x < -5156) {
+    if (this.backgroundFront.x < -4096) {
       this.backgroundFront.x = 1400;
-      this.backgroundFront.y = 430;
+      this.backgroundFront.y = 290;
     }
 
     if (this.player) {

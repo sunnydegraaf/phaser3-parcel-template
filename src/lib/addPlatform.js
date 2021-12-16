@@ -23,7 +23,7 @@ const obstacles = [
   },
   {
     id: "lava",
-    posY: 885,
+    posY: 878,
     shapeCache: "lava_shapes",
     shape: "LAVA_00072",
   },
