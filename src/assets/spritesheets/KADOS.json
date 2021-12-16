@@ -1,0 +1,356 @@
+{
+	"textures": [
+		{
+			"image": "KADOS-0.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1200,
+				"h": 1000
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "KADOS_00000.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					}
+				},
+				{
+					"filename": "KADOS_00001.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					},
+					"frame": {
+						"x": 300,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					}
+				},
+				{
+					"filename": "KADOS_00002.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					},
+					"frame": {
+						"x": 600,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					}
+				},
+				{
+					"filename": "KADOS_00003.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					},
+					"frame": {
+						"x": 900,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					}
+				},
+				{
+					"filename": "KADOS_00004.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					},
+					"frame": {
+						"x": 0,
+						"y": 250,
+						"w": 300,
+						"h": 250
+					}
+				},
+				{
+					"filename": "KADOS_00005.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					},
+					"frame": {
+						"x": 300,
+						"y": 250,
+						"w": 300,
+						"h": 250
+					}
+				},
+				{
+					"filename": "KADOS_00006.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					},
+					"frame": {
+						"x": 600,
+						"y": 250,
+						"w": 300,
+						"h": 250
+					}
+				},
+				{
+					"filename": "KADOS_00007.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					},
+					"frame": {
+						"x": 900,
+						"y": 250,
+						"w": 300,
+						"h": 250
+					}
+				},
+				{
+					"filename": "KADOS_00008.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					},
+					"frame": {
+						"x": 0,
+						"y": 500,
+						"w": 300,
+						"h": 250
+					}
+				},
+				{
+					"filename": "KADOS_00009.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					},
+					"frame": {
+						"x": 300,
+						"y": 500,
+						"w": 300,
+						"h": 250
+					}
+				},
+				{
+					"filename": "KADOS_00010.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					},
+					"frame": {
+						"x": 600,
+						"y": 500,
+						"w": 300,
+						"h": 250
+					}
+				},
+				{
+					"filename": "KADOS_00011.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					},
+					"frame": {
+						"x": 900,
+						"y": 500,
+						"w": 300,
+						"h": 250
+					}
+				},
+				{
+					"filename": "KADOS_00012.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					},
+					"frame": {
+						"x": 0,
+						"y": 750,
+						"w": 300,
+						"h": 250
+					}
+				},
+				{
+					"filename": "KADOS_00013.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					},
+					"frame": {
+						"x": 300,
+						"y": 750,
+						"w": 300,
+						"h": 250
+					}
+				},
+				{
+					"filename": "KADOS_00014.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					},
+					"frame": {
+						"x": 600,
+						"y": 750,
+						"w": 300,
+						"h": 250
+					}
+				},
+				{
+					"filename": "KADOS_00015.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 250
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 250
+					},
+					"frame": {
+						"x": 900,
+						"y": 750,
+						"w": 300,
+						"h": 250
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:bf469da759ed1cfab0e0c4f8f4154d89:619f848e5c741199a7edcfdcc107a331:8f418fb91ea18789cc4a95f5642db303$"
+	}
+}

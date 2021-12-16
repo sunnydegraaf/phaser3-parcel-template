@@ -17,11 +17,13 @@ export default class Game extends Phaser.Scene {
     this.scoreReference = this.add.image(1350, 25, "score").setOrigin(1, 0);
 
     //audio
-    this.crashSound = this.sound.add("crash");
-    this.jumpSound = this.sound.add("jump");
-    this.gameSound = this.sound.add("game", { loop: true });
+    this.crashSound = this.sound.add("crash", { volume: 0.4 });
+    this.jumpSound = this.sound.add("jump", { volume: 0.2 });
+    this.gameSound = this.sound.add("game", { loop: true, volume: 0.3 });
 
     this.gameSound.play();
+
+    this.start = this.game.getTime();
 
     // this.sound.setDecodedCallback([this.crashSound, this.jumpSound, this.gameSound, this.menuSound, this.startSound], start, this);
 
@@ -57,7 +59,7 @@ export default class Game extends Phaser.Scene {
         isStatic: true,
         label: "slope",
       })
-      .setAngle(12);
+      .setAngle(13);
 
     this.backgroundBack = this.add
       .image(-800, -400, "bgBack")
@@ -68,6 +70,8 @@ export default class Game extends Phaser.Scene {
       .image(700, 270, "bgFront")
       .setDepth(-1)
       .setOrigin(0, 0);
+
+    this.matter.world.fixedDelta = true;
 
     //renders
     this.renderHealth();
@@ -102,12 +106,14 @@ export default class Game extends Phaser.Scene {
     );
   }
 
-  update(delta) {
-    this.backgroundBack.x += -6 * (delta / 150000) - 6;
-    this.backgroundBack.y -= (6 * (delta / 150000) + 6) / 4.695;
+  update() {
+    let elapsed = this.game.getTime() - this.start;
 
-    this.backgroundFront.x += -6 * (delta / 40000) - 6;
-    this.backgroundFront.y -= (6 * (delta / 40000) + 6) / 4.695;
+    this.backgroundBack.x += -6 * (elapsed / 150000) - 6;
+    this.backgroundBack.y -= (6 * (elapsed / 150000) + 6) / 4.3;
+
+    this.backgroundFront.x += -6 * (elapsed / 40000) - 6;
+    this.backgroundFront.y -= (6 * (elapsed / 40000) + 6) / 4.3;
 
     if (this.backgroundBack.x < -2934) {
       this.backgroundBack.x = 1400;
@@ -116,16 +122,16 @@ export default class Game extends Phaser.Scene {
 
     if (this.backgroundFront.x < -5156) {
       this.backgroundFront.x = 1400;
-      this.backgroundFront.y = 410;
+      this.backgroundFront.y = 430;
     }
 
     if (this.player) {
       this.player.setAngularVelocity(0);
-      this.player.setVelocityX(-0.07);
+      this.player.setVelocityX(-0.05);
 
       this.snow.setPosition(
         this.player.body.position.x - 137,
-        this.player.body.position.y + 68
+        this.player.body.position.y + 65
       );
 
       this.biem.setPosition(
@@ -136,8 +142,8 @@ export default class Game extends Phaser.Scene {
 
     let minDistance = this.game.config.width + 600;
     this.platformGroup.getChildren().forEach(function (platform) {
-      platform.x += -6 * (delta / 40000) - 8;
-      platform.y -= (6 * (delta / 40000) + 8) / 4.695;
+      platform.x += -6 * (elapsed / 40000) - 8;
+      platform.y -= (6 * (elapsed / 40000) + 8) / 4.3;
       let platformDistance =
         this.game.config.width - platform.x - platform.displayWidth / 2;
       minDistance = Math.min(minDistance, platformDistance);
@@ -189,7 +195,7 @@ export default class Game extends Phaser.Scene {
     this.whiteFlash.alpha = 0;
 
     this.player.body.position.y += 2;
-    this.snow = this.add.sprite(0, 0, "snow").setScale(1, 1).setDepth("-1");
+    this.snow = this.add.sprite(0, 0, "snow").setScale(1, 1).setDepth(2);
     this.biem = this.add.sprite(0, 0, "biem").setScale(1, 1);
 
     createPlayerAnimations(this);
@@ -256,8 +262,10 @@ export default class Game extends Phaser.Scene {
     console.log(this.health);
 
     if (this.health === 0) {
-      this.gameSound.stop();
-      this.scene.start("gameover", { score: this.score });
+      setTimeout(() => {
+        this.gameSound.stop();
+        this.scene.start("gameover", { score: this.score });
+      }, 1000);
     }
   }
 

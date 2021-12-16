@@ -1,4 +1,4 @@
-const obstacles = ["dumpster", "snowman", "popo"];
+const obstacles = ["dumpster", "snowman", "popo", "kados"];
 
 export const collision = function (context, bodyA, bodyB) {
   //collider player - slope
@@ -35,6 +35,7 @@ export const collision = function (context, bodyA, bodyB) {
         category: 2,
         mask: 0,
       };
+      context.crashSound.play();
       // context.player.setPosition(400, 400);
       context.handleHealth();
       context.invincible();

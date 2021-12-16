@@ -33,13 +33,14 @@ body {
 }
 
 .score-logo {
-  position: relative;
+  position: absolute;
+  top: -90px;
   margin: 0px auto;
   left: 0px;
   right: 0px;
   width: 80%;
   object-fit: cover;
-  height: 200px;
+  height: 250px;
   z-index: 1;
 }
 
@@ -62,23 +63,36 @@ body {
   text-shadow: -4px 4px 0px #220065;
 }
 
+.bottom-wrapper {
+  height: 100%;
+  position: relative;
+  top: 110px;
+}
+
 .col-12 li {
   font-family: proxima-nova, sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 2.5em;
+  font-size: 2.2em;
+  line-height: 1.5;
   text-transform: uppercase;
   color: #fcf7f7;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #220065;
 }
 
-li span {
-  margin-left: 1em;
+ol {
+  list-style-type: none;
+  padding-left: 0px;
 }
 
 li.player {
   color: #f6c61d;
+}
+
+.index {
+  display: inline-block;
+  width: 100px !important;
 }
 
 li .score {
@@ -87,12 +101,12 @@ li .score {
 
 .screen {
   position: relative;
-  padding: 50px;
+  padding: 50px 75px;
   border-radius: 50px;
   background-color: #3e23c2;
   display: flex;
   flex-direction: column;
-  height: auto;
+  min-height: 500px;
   width: 50%;
   border: 10px solid #f5c537;
 }
@@ -139,6 +153,17 @@ button {
   z-index: 2;
   border: 1px solid #220063;
   box-shadow: #220063 0px 2px 0px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #220065;
+  border: 2px solid #220065;
+}
+
+.try-again {
+  padding: 10px 30px;
+  font-size: 1.7em;
+  border: 2px solid #220065;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #220065;
 }
 
 .col-12 input {
@@ -148,7 +173,6 @@ button {
   font-size: 2.5em;
   padding: 20px;
   z-index: 2;
-
   color: #220063;
   width: 75%;
   border-radius: 10px;
@@ -164,17 +188,15 @@ button {
   font-size: 5em;
   text-transform: uppercase;
   color: #f6c61d;
-  margin: 0;
+  margin: 20px;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #220065;
 }
 
 input::placeholder {
-  /* font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 2.5em; */
+  font-size: 2rem;
   color: #220063;
+  transform: translateY(-5px);
 }
 
 p {

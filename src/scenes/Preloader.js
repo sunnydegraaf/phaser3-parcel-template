@@ -7,6 +7,7 @@ import bgBack from "../assets/images/tinified/BG_BACK_01.png";
 import bgFront from "../assets/images/tinified/BG_FRONT_01.png";
 // import scoreboard from "../assets/images/tinified/SCOREBOARD.png";
 
+import playerImg0 from "../assets/spritesheets/tinified/SLEE_Basis_0.png";
 import playerImg1 from "../assets/spritesheets/tinified/SLEE_Basis_1.png";
 import playerImg2 from "../assets/spritesheets/tinified/SLEE_Basis_2.png";
 import playerImg3 from "../assets/spritesheets/tinified/SLEE_Basis_3.png";
@@ -16,12 +17,16 @@ import boom from "../assets/spritesheets/tinified/BIEM.png";
 import dumpsterImg from "../assets/spritesheets/tinified/DUMPSTER.png";
 import snowmanImg from "../assets/spritesheets/tinified/SNOWMAN.png";
 import popoImg from "../assets/spritesheets/tinified/POPO.png";
+import lavaImg from "../assets/spritesheets/tinified/LAVA.png";
+import kadosImg from "../assets/spritesheets/tinified/KADOS.png";
 import snowImg from "../assets/spritesheets/tinified/SNEEUW-basis.png";
 
 import playerShapes from "../assets/spritesheets/SLEE-shapes.json";
 import dumpsterShapes from "../assets/spritesheets/DUMPSTER-shapes.json";
 import snowmanShapes from "../assets/spritesheets/SNOWMAN-shapes.json";
 import popoShapes from "../assets/spritesheets/POPO-shapes.json";
+import lavaShapes from "../assets/spritesheets/LAVA-shapes.json";
+import kadosShapes from "../assets/spritesheets/KADOS-shapes.json";
 
 import beginScreen from "../assets/images/tinified/beginscreen.png";
 
@@ -33,11 +38,11 @@ import lives04 from "../assets/images/LIVES/LIVES_04.png";
 
 import score from "../assets/images/SCORE/SCORE.png";
 
-import crash from "../assets/audio/Crash.mp3"
-import jump from "../assets/audio/Jump.mp3"
-import game from "../assets/audio/Game.mp3"
-import menu from "../assets/audio/Menu.mp3"
-import start from "../assets/audio/Start.mp3"
+import crash from "../assets/audio/Crash.mp3";
+import jump from "../assets/audio/Jump.mp3";
+import game from "../assets/audio/Game.mp3";
+import menu from "../assets/audio/Menu.mp3";
+import start from "../assets/audio/Start.mp3";
 
 export default class Preloader extends Phaser.Scene {
   constructor() {
@@ -46,6 +51,11 @@ export default class Preloader extends Phaser.Scene {
 
   preload() {
     //player
+    this.load.spritesheet("player0", playerImg0, {
+      frameWidth: 300,
+      frameHeight: 340,
+    });
+
     this.load.spritesheet("player", playerImg1, {
       frameWidth: 300,
       frameHeight: 340,
@@ -91,15 +101,24 @@ export default class Preloader extends Phaser.Scene {
       frameHeight: 350,
     });
 
+    this.load.spritesheet("kados", kadosImg, {
+      frameWidth: 300,
+      frameHeight: 250,
+    });
+
+    this.load.spritesheet("lava", lavaImg, {
+      frameWidth: 300,
+      frameHeight: 500,
+    });
+
     this.load.json("shapes", playerShapes);
     this.load.json("dumpster_shapes", dumpsterShapes);
     this.load.json("snowman_shapes", snowmanShapes);
     this.load.json("popo_shapes", popoShapes);
+    this.load.json("kados_shapes", kadosShapes);
+    this.load.json("lava_shapes", lavaShapes);
 
     this.load.image("background", background);
-    this.load.image("lava", lava);
-    this.load.image("heart", heart);
-    this.load.image("slope2", slope2);
     this.load.image("slope2", slope2);
     this.load.image("beginscreen", beginScreen);
     this.load.image("bgBack", bgBack);
@@ -112,13 +131,11 @@ export default class Preloader extends Phaser.Scene {
     this.load.image("lives04", lives04);
     this.load.image("score", score);
 
-    this.load.audio("crash", crash)
-    this.load.audio("jump", jump)
-    this.load.audio("game", game)
-    this.load.audio("menu", menu)
-    this.load.audio("start", start)
-
-
+    this.load.audio("crash", crash);
+    this.load.audio("jump", jump);
+    this.load.audio("game", game);
+    this.load.audio("menu", menu);
+    this.load.audio("start", start);
   }
 
   create() {

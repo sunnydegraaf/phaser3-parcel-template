@@ -7,6 +7,7 @@ import {
   limit,
   getDocs,
   query,
+  doc,
 } from "firebase/firestore";
 
 const firebaseApp = initializeApp({
@@ -24,7 +25,9 @@ async function getData() {
   const q = query(collection(db, "leaderboard"), limit(5));
 
   const querySnapshot = await getDocs(q);
-  const scoreList = await querySnapshot.docs.map((doc) => doc.data());
+  const scoreList = await querySnapshot.docs.map((doc) => {
+    return { ...doc.data(), uid: doc.id };
+  });
   return scoreList;
 }
 
@@ -35,23 +38,31 @@ const leaderBoard = async (score, context) => {
     return parseFloat(b.score) - parseFloat(a.score);
   });
 
+  const myOwn = data
+    .map((value, index) => {
+      if (value.uid === context.uid) return { ...value, standing: index + 1 };
+    })
+    .filter((value) => value !== undefined);
+
   return (
-    <div className="col-12">
-      <div className="screen">
+    <div style={{ flexDirection: "column", gap: 32 }} className="col-12">
+      <div style={{ padding: 30, width: "55%" }} className="screen">
         <span className="screen-overlay two"></span>
         <span className="screen-overlay three"></span>
         <span className="screen-overlay"></span>
         <h1>High scores</h1>
         <ol className="list">
-          {data.map((score) => {
+          {data.map((score, index) => {
             return (
-              <li>
-                <span className="username">{score.username}</span>
+              <li className={score.uid === context.uid && "player"}>
+                <span className="index">{index + 1}</span>
+                <span className="username">{score.name}</span>
                 <span className="score">{score.score}</span>
               </li>
             );
           })}
-          <li value={12} className="player">
+          <li className="player">
+            <span className="index">{myOwn[0].standing}</span>
             <span id="username" className="username">
               {context.name}
             </span>
@@ -59,6 +70,15 @@ const leaderBoard = async (score, context) => {
           </li>
         </ol>
       </div>
+      <button
+        className="try-again"
+        onClick={() => {
+          context.scene.start("game");
+          context.menuSound.stop();
+        }}
+      >
+        TRY AGAIN
+      </button>
     </div>
   );
 };

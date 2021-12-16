@@ -18,17 +18,21 @@ const db = getFirestore();
 const handleSetScore = async (context, score) => {
   const name = document.getElementById("name").value;
 
-  try {
-    await addDoc(collection(db, "leaderboard"), {
-      name,
-      score: score,
-      achievedAt: Date.now(),
-    });
+  if (name.length < 14 && name !== "") {
+    try {
+      const doc = await addDoc(collection(db, "leaderboard"), {
+        name,
+        score: score,
+        achievedAt: Date.now(),
+      });
 
-    context.name = name;
-    context.elementInput.destroy();
-  } catch (error) {
-    console.log(error);
+      context.name = name;
+      context.uid = doc.id;
+      context.addEnd();
+      context.elementInput.destroy();
+    } catch (error) {
+      console.log(error);
+    }
   }
 };
 
@@ -40,10 +44,12 @@ const scoreInput = async (context, score) => {
         <span className="screen-overlay three"></span>
         <span className="screen-overlay"></span>
         <img className="score-logo" src={image} width={100} height={100} />
-        <h3 className="score-name">{score}</h3>
-        <div className="form-wrapper">
-          <input id="name" name="name" placeholder="ENTER YOUR NAME" />
-          <button onClick={() => handleSetScore(context, score)}>OK</button>
+        <div className="bottom-wrapper">
+          <h3 className="score-name">{score}</h3>
+          <div className="form-wrapper">
+            <input id="name" name="name" placeholder="ENTER YOUR NAME" />
+            <button onClick={() => handleSetScore(context, score)}>OK</button>
+          </div>
         </div>
       </div>
     </div>

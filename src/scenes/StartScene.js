@@ -6,8 +6,6 @@ export default class StartScene extends Phaser.Scene {
   }
 
   create() {
-    this.startSound = this.sound.add("start", { loop: true })
-    this.startSound.play();
     function toggleFullScreen() {
       if (!document.fullscreenElement) {
         document.documentElement.requestFullscreen();
@@ -18,23 +16,30 @@ export default class StartScene extends Phaser.Scene {
       }
     }
 
-    toggleFullScreen();
+    this.startSound = this.sound.add("start", { volume: 0.3 });
 
     this.centerX = this.cameras.main.width / 2;
     this.centerY = this.cameras.main.height / 2;
     this.add.image(0, 0, "beginscreen").setOrigin(0, 0).setDepth(-1);
 
-    let button = this.add
-      .text(this.centerX, this.centerY + 275, "Start game")
-      .setFontSize(24)
-      .setOrigin(0.5)
-      .setPadding(20)
-      .setStyle({ backgroundColor: "#111" })
-      .setInteractive({ useHandCursor: true });
+    this.input.keyboard.on(
+      "keydown-SPACE",
+      function () {
+        toggleFullScreen();
+        this.startSound.play();
+        this.scene.start("game");
+      },
+      this
+    );
 
-    button.on("pointerup", () => {
-      this.startSound.stop();
-      this.scene.start("game");
-    });
+    this.input.on(
+      "pointerdown",
+      function (pointer) {
+        toggleFullScreen();
+        this.startSound.play();
+        this.scene.start("game");
+      },
+      this
+    );
   }
 }

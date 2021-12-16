@@ -1,5 +1,25 @@
 export const createPlayerAnimations = function (context) {
   context.anims.create({
+    key: "sled_0",
+    frameRate: 30,
+    repeat: -1,
+    frames: context.anims.generateFrameNumbers("player0", {
+      start: 0,
+      end: 30,
+    }),
+  });
+
+  context.anims.create({
+    key: "sled-jump_0",
+    frameRate: 30,
+    repeat: -1,
+    frames: context.anims.generateFrameNumbers("player0", {
+      start: 31,
+      end: 83,
+    }),
+  });
+
+  context.anims.create({
     key: "sled_1",
     frameRate: 30,
     repeat: -1,

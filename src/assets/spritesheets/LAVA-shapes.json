@@ -1,0 +1,38 @@
+{
+  "generator_info": "Shape definitions generated with PhysicsEditor. Visit https://www.codeandweb.com/physicseditor",
+  "LAVA_00072": {
+    "type": "fromPhysicsEditor",
+    "label": "LAVA_00072",
+    "isStatic": false,
+    "density": 0.1,
+    "restitution": 0,
+    "friction": 0.1,
+    "frictionAir": 0.01,
+    "frictionStatic": 0.5,
+    "collisionFilter": {
+      "group": 0,
+      "category": 1,
+      "mask": 255
+    },
+    "fixtures": [
+      {
+        "label": "lava",
+        "isSensor": false,
+        "vertices": [
+          [
+            { "x": 118, "y": 59 },
+            { "x": 134, "y": 72 },
+            { "x": 227, "y": 98 },
+            { "x": 235, "y": 75 },
+            { "x": 130, "y": 50 }
+          ],
+          [
+            { "x": 237, "y": 90 },
+            { "x": 235, "y": 75 },
+            { "x": 227, "y": 98 }
+          ]
+        ]
+      }
+    ]
+  }
+}

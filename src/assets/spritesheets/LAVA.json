@@ -1,0 +1,524 @@
+{
+	"textures": [
+		{
+			"image": "LAVA-0.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1800,
+				"h": 2000
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "LAVA_00068.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00069.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 300,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00070.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 600,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00071.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 900,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00072.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 1200,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00073.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 1500,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00074.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 0,
+						"y": 500,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00075.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 300,
+						"y": 500,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00076.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 600,
+						"y": 500,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00077.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 900,
+						"y": 500,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00078.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 1200,
+						"y": 500,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00079.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 1500,
+						"y": 500,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00080.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 0,
+						"y": 1000,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00081.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 300,
+						"y": 1000,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00082.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 600,
+						"y": 1000,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00083.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 900,
+						"y": 1000,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00084.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 1200,
+						"y": 1000,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00085.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 1500,
+						"y": 1000,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00086.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 0,
+						"y": 1500,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00087.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 300,
+						"y": 1500,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00088.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 600,
+						"y": 1500,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00089.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 900,
+						"y": 1500,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00090.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 1200,
+						"y": 1500,
+						"w": 300,
+						"h": 500
+					}
+				},
+				{
+					"filename": "LAVA_00091.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 300,
+						"h": 500
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 300,
+						"h": 500
+					},
+					"frame": {
+						"x": 1500,
+						"y": 1500,
+						"w": 300,
+						"h": 500
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:c64c3d7465a83029a4642e5e07e2f4ec:6c6943792569448f6832169692826097:8068b955a3d295d7636f3b37455a9605$"
+	}
+}

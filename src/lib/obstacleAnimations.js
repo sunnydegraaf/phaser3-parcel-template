@@ -28,4 +28,24 @@ export const createObstacleAnimations = function (context) {
       end: 15,
     }),
   });
+
+  context.anims.create({
+    key: "kados",
+    frameRate: 30,
+    repeat: -1,
+    frames: context.anims.generateFrameNumbers("kados", {
+      start: 0,
+      end: 15,
+    }),
+  });
+
+  context.anims.create({
+    key: "lava",
+    frameRate: 30,
+    repeat: -1,
+    frames: context.anims.generateFrameNumbers("lava", {
+      start: 0,
+      end: 15,
+    }),
+  });
 };

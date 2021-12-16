@@ -5,28 +5,40 @@ let gameOptions = {
 const obstacles = [
   {
     id: "dumpster",
-    posY: 776,
+    posY: 796,
     shapeCache: "dumpster_shapes",
     shape: "Vuilcontainer_00000",
   },
   {
     id: "snowman",
-    posY: 790,
+    posY: 815,
     shapeCache: "snowman_shapes",
     shape: "SNEEUWPOP_00000",
   },
   {
     id: "popo",
-    posY: 795,
+    posY: 815,
     shapeCache: "popo_shapes",
     shape: "POPO_00000",
+  },
+  // {
+  //   id: "lava",
+  //   posY: 861,
+  //   shapeCache: "lava_shapes",
+  //   shape: "LAVA_00072",
+  // },
+  {
+    id: "kados",
+    posY: 824,
+    shapeCache: "kados_shapes",
+    shape: "KADOS_00000",
   },
 ];
 
 export const addPlatform = function (context, posX) {
   let platform;
 
-  const randomObstacle = obstacles[Phaser.Math.Between(0, 2)];
+  const randomObstacle = obstacles[Phaser.Math.Between(0, 3)];
 
   const shape = context.cache.json.get(randomObstacle.shapeCache);
 
@@ -51,8 +63,17 @@ export const addPlatform = function (context, posX) {
         shape: shape[randomObstacle.shape],
         isSensor: true,
       })
-      .setAngle(randomObstacle.id === "snowman" ? 13 : 12)
-      .setScale(1, 1);
+      .setAngle(
+        randomObstacle.id === "snowman"
+          ? 13
+          : randomObstacle.id === "lava"
+          ? -1
+          : 13
+      )
+      .setScale(
+        randomObstacle.id === "snowman" ? 0.9 : 1,
+        randomObstacle.id === "snowman" ? 0.9 : 1
+      );
     platform.play(randomObstacle.id);
 
     platform.setSensor(true);
