@@ -16,7 +16,7 @@ export default class StartScene extends Phaser.Scene {
       }
     }
 
-    this.startSound = this.sound.add("start", { volume: 0.3 });
+    this.startSound = this.sound.add("menu", { volume: 0.3 });
 
     this.centerX = this.cameras.main.width / 2;
     this.centerY = this.cameras.main.height / 2;

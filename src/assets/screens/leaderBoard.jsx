@@ -51,8 +51,8 @@ const leaderBoard = async (score, context) => {
   const top5 = data.sort((a, b) => b.score - a.score).slice(0, 5);
 
   return (
-    <div style={{ flexDirection: "column", gap: 32 }} className="col-12">
-      <div style={{ padding: 30, width: "55%" }} className="screen">
+    <div style={{ flexDirection: "column", gap: 50 }} className="col-12">
+      <div style={{ padding: '20px 50px', width: "55%" }} className="screen">
         <span className="screen-overlay two"></span>
         <span className="screen-overlay three"></span>
         <span className="screen-overlay"></span>

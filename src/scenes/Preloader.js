@@ -42,7 +42,7 @@ import crash from "../assets/audio/Crash.mp3";
 import jump from "../assets/audio/Jump.mp3";
 import game from "../assets/audio/Game.mp3";
 import menu from "../assets/audio/Menu.mp3";
-import start from "../assets/audio/Start.mp3";
+// import start from "../assets/audio/Start.mp3";
 
 import startVideo from "../assets/video/LANDING_BG.mp4";
 import gameOverVideo from "../assets/video/HIGHSCORE_BG.mp4";
@@ -143,7 +143,7 @@ export default class Preloader extends Phaser.Scene {
     this.load.audio("jump", jump);
     this.load.audio("game", game);
     this.load.audio("menu", menu);
-    this.load.audio("start", start);
+    // this.load.audio("start", start);
 
     var width = this.cameras.main.width;
     var height = this.cameras.main.height;
@@ -158,7 +158,7 @@ export default class Preloader extends Phaser.Scene {
       .setOrigin(0, 0)
       .setDepth(-1);
 
-    this.load.on("progress", function (value) {});
+    this.load.on("progress", function (value) { });
 
     this.load.on(
       "complete",
@@ -197,5 +197,5 @@ export default class Preloader extends Phaser.Scene {
     );
   }
 
-  create() {}
+  create() { }
 }

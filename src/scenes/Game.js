@@ -25,8 +25,6 @@ export default class Game extends Phaser.Scene {
 
     this.start = this.game.getTime();
 
-    // this.sound.setDecodedCallback([this.crashSound, this.jumpSound, this.gameSound, this.menuSound, this.startSound], start, this);
-
     this.totalHealth = this.add.image(50, 25, "livesTotal").setOrigin(0, 0);
     this.scoreReference = this.add.image(1350, 25, "score").setOrigin(1, 0);
 
@@ -62,7 +60,7 @@ export default class Game extends Phaser.Scene {
       .setAngle(13);
 
     this.backgroundBack = this.add
-      .image(-800, -400, "bgBack")
+      .image(-800, -410, "bgBack")
       .setDepth(-2)
       .setOrigin(0, 0);
     this.backgroundBack.alpha = 0.75;
@@ -120,7 +118,7 @@ export default class Game extends Phaser.Scene {
       this.backgroundBack.y = 0;
     }
 
-    if (this.backgroundFront.x < -4096) {
+    if (this.backgroundFront.x < -4027) {
       this.backgroundFront.x = 1400;
       this.backgroundFront.y = 290;
     }
