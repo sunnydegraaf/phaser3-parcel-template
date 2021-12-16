@@ -21,12 +21,12 @@ const obstacles = [
     shapeCache: "popo_shapes",
     shape: "POPO_00000",
   },
-  // {
-  //   id: "lava",
-  //   posY: 861,
-  //   shapeCache: "lava_shapes",
-  //   shape: "LAVA_00072",
-  // },
+  {
+    id: "lava",
+    posY: 885,
+    shapeCache: "lava_shapes",
+    shape: "LAVA_00072",
+  },
   {
     id: "kados",
     posY: 824,
@@ -38,7 +38,7 @@ const obstacles = [
 export const addPlatform = function (context, posX) {
   let platform;
 
-  const randomObstacle = obstacles[Phaser.Math.Between(0, 3)];
+  const randomObstacle = obstacles[Phaser.Math.Between(0, 4)];
 
   const shape = context.cache.json.get(randomObstacle.shapeCache);
 
@@ -67,7 +67,7 @@ export const addPlatform = function (context, posX) {
         randomObstacle.id === "snowman"
           ? 13
           : randomObstacle.id === "lava"
-          ? -1
+          ? 0
           : 13
       )
       .setScale(

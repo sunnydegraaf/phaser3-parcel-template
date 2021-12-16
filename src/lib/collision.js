@@ -1,4 +1,4 @@
-const obstacles = ["dumpster", "snowman", "popo", "kados"];
+const obstacles = ["dumpster", "snowman", "popo", "kados", "lava"];
 
 export const collision = function (context, bodyA, bodyB) {
   //collider player - slope

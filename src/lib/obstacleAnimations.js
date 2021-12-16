@@ -45,7 +45,7 @@ export const createObstacleAnimations = function (context) {
     repeat: -1,
     frames: context.anims.generateFrameNumbers("lava", {
       start: 0,
-      end: 15,
+      end: 60,
     }),
   });
 };

@@ -22,7 +22,7 @@ const firebaseApp = initializeApp({
 const db = getFirestore();
 
 async function getData() {
-  const q = query(collection(db, "leaderboard"), limit(5));
+  const q = query(collection(db, "leaderboard"));
 
   const querySnapshot = await getDocs(q);
   const scoreList = await querySnapshot.docs.map((doc) => {
@@ -38,11 +38,17 @@ const leaderBoard = async (score, context) => {
     return parseFloat(b.score) - parseFloat(a.score);
   });
 
+  console.log(data, context.uid);
+
   const myOwn = data
     .map((value, index) => {
       if (value.uid === context.uid) return { ...value, standing: index + 1 };
     })
     .filter((value) => value !== undefined);
+
+  console.log(myOwn);
+
+  const top5 = data.sort((a, b) => b.score - a.score).slice(0, 5);
 
   return (
     <div style={{ flexDirection: "column", gap: 32 }} className="col-12">
@@ -52,7 +58,7 @@ const leaderBoard = async (score, context) => {
         <span className="screen-overlay"></span>
         <h1>High scores</h1>
         <ol className="list">
-          {data.map((score, index) => {
+          {top5.map((score, index) => {
             return (
               <li className={score.uid === context.uid && "player"}>
                 <span className="index">{index + 1}</span>

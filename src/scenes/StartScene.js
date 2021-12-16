@@ -1,5 +1,5 @@
 import Phaser from "phaser";
-
+import videoFile from "../assets/video/LANDING_BG.mp4";
 export default class StartScene extends Phaser.Scene {
   constructor() {
     super("startscene");
@@ -20,17 +20,39 @@ export default class StartScene extends Phaser.Scene {
 
     this.centerX = this.cameras.main.width / 2;
     this.centerY = this.cameras.main.height / 2;
-    this.add.image(0, 0, "beginscreen").setOrigin(0, 0).setDepth(-1);
+
+    // const vid = this.add.video(this.centerX, this.centerY, "startVideo");
+    // vid.play(true);
+    // vid.setPaused(false);
+
+    var video = document.createElement("video");
+
+    video.playsinline = true;
+    video.src = videoFile;
+    video.width = this.cameras.main.width;
+    video.height = this.cameras.main.height;
+    video.autoplay = true;
+    video.loop = true;
+    video.className = "startVideo";
+
+    var element = this.add.dom(this.centerX, this.centerY, video);
 
     this.input.keyboard.on(
       "keydown-SPACE",
       function () {
-        toggleFullScreen();
+        // toggleFullScreen();
         this.startSound.play();
         this.scene.start("game");
       },
       this
     );
+
+    element.addListener("click");
+    element.on("click", () => {
+      // toggleFullScreen();
+      this.startSound.play();
+      this.scene.start("game");
+    });
 
     this.input.on(
       "pointerdown",

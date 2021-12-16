@@ -44,12 +44,17 @@ import game from "../assets/audio/Game.mp3";
 import menu from "../assets/audio/Menu.mp3";
 import start from "../assets/audio/Start.mp3";
 
+import startVideo from "../assets/video/LANDING_BG.mp4";
+import gameOverVideo from "../assets/video/HIGHSCORE_BG.mp4";
+import preLoader from "../assets/screens/preLoader";
+
 export default class Preloader extends Phaser.Scene {
   constructor() {
     super("preloader");
   }
 
-  preload() {
+  async preload() {
+    this.done = false;
     //player
     this.load.spritesheet("player0", playerImg0, {
       frameWidth: 300,
@@ -108,7 +113,7 @@ export default class Preloader extends Phaser.Scene {
 
     this.load.spritesheet("lava", lavaImg, {
       frameWidth: 300,
-      frameHeight: 500,
+      frameHeight: 370,
     });
 
     this.load.json("shapes", playerShapes);
@@ -124,6 +129,9 @@ export default class Preloader extends Phaser.Scene {
     this.load.image("bgBack", bgBack);
     this.load.image("bgFront", bgFront);
 
+    this.load.video("startVideo", startVideo, "loadeddata", false, true);
+    this.load.video("gameOverVideo", gameOverVideo, "loadeddata", false, true);
+
     this.load.image("livesTotal", livesTotal);
     this.load.image("lives01", lives01);
     this.load.image("lives02", lives02);
@@ -136,9 +144,51 @@ export default class Preloader extends Phaser.Scene {
     this.load.audio("game", game);
     this.load.audio("menu", menu);
     this.load.audio("start", start);
+
+    var width = this.cameras.main.width;
+    var height = this.cameras.main.height;
+    // loading bar
+    var bg = this.add.graphics();
+
+    bg.fillStyle(0x5b59ff);
+    bg.fillRect(0, 0, width, height);
+
+    var element = this.add
+      .dom(0, 0, await preLoader(this))
+      .setOrigin(0, 0)
+      .setDepth(-1);
+
+    this.load.on("progress", function (value) {});
+
+    this.load.on(
+      "complete",
+      () => {
+        element.getChildByID("text").innerText = "press any button";
+      },
+      this
+    );
+
+    this.input.keyboard.on(
+      "keydown",
+      function (event) {
+        this.scene.start("startscene");
+      },
+      this
+    );
+
+    element.addListener("click");
+    element.on("click", () => {
+      this.scene.start("startscene");
+    });
+
+    this.input.on(
+      "pointerdown",
+      function (event) {
+        this.scene.start("startscene");
+      },
+      this
+    );
   }
 
-  create() {
-    this.scene.start("startscene");
-  }
+  create() {}
 }

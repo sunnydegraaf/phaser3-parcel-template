@@ -1,6 +1,7 @@
 import Phaser from "phaser";
 import leaderBoard from "../assets/screens/leaderBoard";
-import retryButton from "../assets/screens/button";
+import videoFile from "../assets/video/HIGHSCORE_BG.mp4";
+
 import scoreInput from "../assets/screens/scoreInput";
 
 export default class GameOver extends Phaser.Scene {
@@ -13,6 +14,21 @@ export default class GameOver extends Phaser.Scene {
   }
 
   async create() {
+    this.centerX = this.cameras.main.width / 2;
+    this.centerY = this.cameras.main.height / 2;
+
+    var video = document.createElement("video");
+
+    video.playsinline = true;
+    video.src = videoFile;
+    video.width = this.cameras.main.width;
+    video.height = this.cameras.main.height;
+    video.autoplay = true;
+    video.loop = true;
+    video.className = "startVideo";
+
+    var element = this.add.dom(this.centerX, this.centerY, video);
+
     this.menuSound = this.sound.add("menu", { loop: true, volume: 0.3 });
     this.menuSound.play();
     this.name = "";
