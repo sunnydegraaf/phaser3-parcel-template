@@ -1,5 +1,5 @@
 let gameOptions = {
-  spawnRange: [900, 2000],
+  spawnRange: [700, 1500],
 };
 
 const obstacles = [
