@@ -147,7 +147,7 @@ export default class Game extends Phaser.Scene {
       minDistance = Math.min(minDistance, platformDistance);
       if (platform.x < -900) {
         this.platformGroup.killAndHide(platform);
-        this.platformGroup.remove(platform);
+        // this.platformGroup.remove(platform);
       }
     }, this);
 
