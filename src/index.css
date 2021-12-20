@@ -11,6 +11,14 @@ body {
     height: 90vh !important;
   }
 
+  .startVideoMobile {
+    display: none !important;
+  }
+
+  .startVideo {
+    display: block !important
+  }
+
   html {
     display: flex;
     justify-content: center;
@@ -229,7 +237,14 @@ canvas {
   font-size: 3em;
 }
 
+.startVideoMobile {
+  display: block;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
 .startVideo {
+  /* display: none !important; */
   overflow: hidden;
   border-radius: 30px;
 }

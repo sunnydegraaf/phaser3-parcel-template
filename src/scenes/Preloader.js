@@ -42,6 +42,7 @@ import menu from "../assets/audio/Menu.mp3";
 // import start from "../assets/audio/Start.mp3";
 
 import startVideo from "../assets/video/LANDING_BG.mp4";
+import startVideoMobile from "../assets/video/LANDING_MOBILE.mp4";
 import gameOverVideo from "../assets/video/HIGHSCORE_BG.mp4";
 import preLoader from "../assets/screens/preLoader";
 
@@ -127,6 +128,7 @@ export default class Preloader extends Phaser.Scene {
     this.load.image("bgFront", bgFront);
 
     this.load.video("startVideo", startVideo, "loadeddata", false, true);
+    this.load.video("startVideoMobile", startVideoMobile, "loadeddata", false, true);
     this.load.video("gameOverVideo", gameOverVideo, "loadeddata", false, true);
 
     this.load.image("livesTotal", livesTotal);
