@@ -16,7 +16,9 @@ export default class StartScene extends Phaser.Scene {
       }
     }
 
-    this.startSound = this.sound.add("menu", { volume: 0.3 });
+    this.startSound = this.sound.add("menu", { loop: true, volume: 0.3 });
+
+    this.startSound.play();
 
     this.centerX = this.cameras.main.width / 2;
     this.centerY = this.cameras.main.height / 2;
@@ -41,7 +43,7 @@ export default class StartScene extends Phaser.Scene {
       "keydown-SPACE",
       function () {
         // toggleFullScreen();
-        this.startSound.play();
+        this.startSound.stop();
         this.scene.start("game");
       },
       this
@@ -50,7 +52,7 @@ export default class StartScene extends Phaser.Scene {
     element.addListener("click");
     element.on("click", () => {
       // toggleFullScreen();
-      this.startSound.play();
+      this.startSound.stop();
       this.scene.start("game");
     });
 
@@ -58,7 +60,7 @@ export default class StartScene extends Phaser.Scene {
       "pointerdown",
       function (pointer) {
         toggleFullScreen();
-        this.startSound.play();
+        this.startSound.stop();
         this.scene.start("game");
       },
       this
