@@ -19,7 +19,7 @@ export default class GameOver extends Phaser.Scene {
 
     var video = document.createElement("video");
 
-    video.playsinline = true;
+    video.playsInline = true;
     video.src = videoFile;
     video.width = this.cameras.main.width;
     video.height = this.cameras.main.height;
