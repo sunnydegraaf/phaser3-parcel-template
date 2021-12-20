@@ -257,8 +257,6 @@ export default class Game extends Phaser.Scene {
     this.live.destroy();
     this.health = this.health - 1;
 
-    console.log(this.health);
-
     if (this.health === 0) {
       setTimeout(() => {
         this.gameSound.stop();
@@ -330,15 +328,5 @@ export default class Game extends Phaser.Scene {
         getEnd: () => 0.6,
       },
     });
-  }
-
-  move() {
-    // if (this.cursorKeys.left.isDown && this.player) {
-    //   this.player.setVelocityX(-4);
-    // } else if (this.cursorKeys.right.isDown) {
-    //   this.player.setVelocityX(4);
-    // } else {
-    //   this.player.setVelocityX(-0.07);
-    // }
   }
 }
