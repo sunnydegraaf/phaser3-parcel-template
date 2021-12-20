@@ -27,12 +27,11 @@ export default class StartScene extends Phaser.Scene {
 
     var video = document.createElement("video");
 
-    video.playsinline = true;
-    video.setAttribute('playsinline', 'playsinline');
     video.src = videoFile;
     video.width = this.cameras.main.width;
     video.height = this.cameras.main.height;
     video.autoplay = true;
+    video.playsInline = true;
     video.loop = true;
     video.className = "startVideo";
 
