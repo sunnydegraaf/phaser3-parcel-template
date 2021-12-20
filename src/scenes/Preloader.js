@@ -157,7 +157,7 @@ export default class Preloader extends Phaser.Scene {
       .setOrigin(0, 0)
       .setDepth(-1);
 
-    this.load.on("progress", function (value) { });
+    this.load.on("progress", function (value) {});
 
     this.load.on(
       "complete",
@@ -196,5 +196,5 @@ export default class Preloader extends Phaser.Scene {
     );
   }
 
-  create() { }
+  create() {}
 }
