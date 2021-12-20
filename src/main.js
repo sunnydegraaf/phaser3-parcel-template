@@ -8,6 +8,7 @@ import Preloader from "./scenes/Preloader";
 const config = {
   fps: {
     target: 60,
+    min: 30,
     forceSetTimeOut: true,
   },
   parent: "phaser",
