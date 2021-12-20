@@ -1,11 +1,8 @@
 import Phaser from "phaser";
 import background from "../assets/images/tinified/background.png";
-import lava from "../assets/images/tinified/lava.png";
 import slope2 from "../assets/images/tinified/slope2.png";
-import heart from "../assets/images/tinified/heart.png";
 import bgBack from "../assets/images/tinified/BG_BACK_01.png";
 import bgFront from "../assets/images/tinified/BG_FRONT_01.png";
-// import scoreboard from "../assets/images/tinified/SCOREBOARD.png";
 
 import playerImg0 from "../assets/spritesheets/tinified/SLEE_Basis_0.png";
 import playerImg1 from "../assets/spritesheets/tinified/SLEE_Basis_1.png";
@@ -30,11 +27,11 @@ import kadosShapes from "../assets/spritesheets/KADOS-shapes.json";
 
 import beginScreen from "../assets/images/tinified/beginscreen.png";
 
-import livesTotal from "../assets/images/LIVES/LIVES_TOTAL.png";
-import lives01 from "../assets/images/LIVES/LIVES_01.png";
-import lives02 from "../assets/images/LIVES/LIVES_02.png";
-import lives03 from "../assets/images/LIVES/LIVES_03.png";
-import lives04 from "../assets/images/LIVES/LIVES_04.png";
+import livesTotal from "../assets/images/LIVES/tinified/LIVES_TOTAL.png";
+import lives01 from "../assets/images/LIVES/tinified/LIVES_01.png";
+import lives02 from "../assets/images/LIVES/tinified/LIVES_02.png";
+import lives03 from "../assets/images/LIVES/tinified/LIVES_03.png";
+import lives04 from "../assets/images/LIVES/tinified/LIVES_04.png";
 
 import score from "../assets/images/SCORE/SCORE.png";
 
