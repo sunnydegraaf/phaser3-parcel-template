@@ -38,15 +38,11 @@ const leaderBoard = async (score, context) => {
     return parseFloat(b.score) - parseFloat(a.score);
   });
 
-  console.log(data, context.uid);
-
   const myOwn = data
     .map((value, index) => {
       if (value.uid === context.uid) return { ...value, standing: index + 1 };
     })
     .filter((value) => value !== undefined);
-
-  console.log(myOwn);
 
   const top5 = data.sort((a, b) => b.score - a.score).slice(0, 5);
 
